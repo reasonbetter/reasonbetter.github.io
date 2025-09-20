@@ -2,6 +2,11 @@
 import { COURSES } from "@/lib/courses";
 import Link from "next/link";
 
+export const dynamicParams = false; // 
+export async function generateStaticParams() { // 
+  return COURSES.map(c => ({ slug: c.slug }));
+}
+
 export default function CoursePage({ params }: { params: { slug: string } }) {
   const course = COURSES.find(c => c.slug === params.slug);
   if (!course) return <div className="mx-auto max-w-3xl p-6">Course not found.</div>;
@@ -11,7 +16,6 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
       <Link href="/teaching" className="text-sm underline">← Teaching</Link>
       <h1 className="mt-2 text-3xl font-semibold">{course.code}: {course.name}</h1>
       <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">{course.desc}</p>
-
       {course.readings.length > 0 && (
         <>
           <h2 className="mt-10 text-2xl font-semibold">Readings</h2>
