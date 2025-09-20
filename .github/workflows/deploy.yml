@@ -1,9 +1,10 @@
-# .github/workflows/deploy.yml
+# Build and deploy a static Next.js export to GitHub Pages
 name: Deploy static site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -22,9 +23,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      - run: npm run build
-      - run: touch out/.nojekyll   # keep GitHub from ignoring the _next folder
+      - run: npm ci || npm install
+      - run: npm run build          # next build && next export → creates ./out
+      - run: touch out/.nojekyll    # disables Jekyll on the published artifact
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
@@ -34,7 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
