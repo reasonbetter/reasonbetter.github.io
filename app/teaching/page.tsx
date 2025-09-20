@@ -22,7 +22,7 @@ export default function TeachingIndex() {
 
       <div className="mt-10 text-sm">
         <p className="text-slate-600 dark:text-slate-400">
-          Full teaching blurbs adapted from your Squarespace <em>Teaching</em> page. :contentReference[oaicite:7]{index=7}
+          Full teaching blurbs adapted from your Squarespace <em>Teaching</em> page.
         </p>
       </div>
     </main>
