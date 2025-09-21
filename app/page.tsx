@@ -143,7 +143,7 @@ export default function Home() {
               <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
-                    <h3 className="text-lg font-medium whitespace-pre-line">{talk.title}</h3>
+                    <h3 className="text-lg font-medium whitespace-pre-line tracking-tight">{talk.title}</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
                   </li>
                 ))}
@@ -209,7 +209,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="text-lg font-semibold leading-snug">{p.title}</h3>
+                <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 {!!p.tags?.length && (
@@ -245,7 +245,7 @@ export default function Home() {
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold">Phil 450: Philosophy of Emerging Technology</h3>
+              <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
@@ -257,7 +257,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold">Phil 360: Global Priorities</h3>
+              <h3 className="text-lg font-semibold tracking-tight">Phil 360: Global Priorities</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
@@ -267,8 +267,8 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold">Phil 183: Critical Reasoning</h3>
+            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm md:col-start-1">
+              <h3 className="text-lg font-semibold tracking-tight">Phil 183: Critical Reasoning</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
@@ -287,6 +287,14 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
+              <h2 className="text-xl font-semibold">Elsewhere</h2>
+              <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
+                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
+                <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
+                <li><a href="https://philpeople.org/profiles/david-manley" className="hover:underline">PhilPeople</a></li>
+              </ul>
+            </div>
+            <div>
               <h2 className="text-xl font-semibold">Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
@@ -300,14 +308,6 @@ export default function Home() {
                   dmanley@umich.edu
                 </a>
               </div>
-            </div>
-            <div>
-              <h2 className="text-xl font-semibold">Elsewhere</h2>
-              <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
-                <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
-                <li><a href="https://philpeople.org/profiles/david-manley" className="hover:underline">PhilPeople</a></li>
-              </ul>
             </div>
           </div>
           <div className="mt-10 text-sm text-slate-500">
