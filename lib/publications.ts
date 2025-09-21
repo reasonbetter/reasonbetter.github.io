@@ -10,7 +10,7 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title: "The Ethics, Economics, and Demographics of Delaying Aging",
-    venue: "in Essays on Longtermism, eds. H. Greaves & W. MacAskill (OUP, 2025)",
+    venue: "in <em>Essays on Longtermism</em>, eds. H. Greaves & W. MacAskill (OUP, 2025)",
     link: "/papers/EEDDA.pdf",
     tags: ["ethics", "economics", "biotech", "emerging technology"],
     note: "Delaying aging will yield enormous social benefits and is under-resourced.",
