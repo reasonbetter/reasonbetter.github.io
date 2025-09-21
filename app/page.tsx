@@ -62,7 +62,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 max-w-sm">
+          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
             <h3 className="font-medium text-lg">Contact</h3>
             <div className="mt-4 space-y-3">
               <div className="flex items-center">
@@ -78,7 +78,7 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300">
+                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300 whitespace-nowrap">
                   University of Michigan, Ann Arbor
                 </div>
               </div>
@@ -212,28 +212,30 @@ export default function Home() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {publications.map((p: Publication, idx: number) => (
-              <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md">
+              <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
                 <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
-                {!!p.tags?.length && (
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {p.tags.map((t: string) => (
-                      <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-xs font-medium">{t}</span>
-                    ))}
+                <div className="mt-auto pt-4">
+                  <div className="flex justify-between items-end">
+                    {!!p.tags?.length && (
+                      <div className="flex flex-wrap gap-2">
+                        {p.tags.map((t: string) => (
+                          <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-xs font-medium">{t}</span>
+                        ))}
+                      </div>
+                    )}
+                    {p.link && (
+                      <a className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0"
+                         href={p.link} target="_blank" rel="noreferrer">
+                        Open
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    )}
                   </div>
-                )}
-                {p.link && (
-                  <div className="mt-5">
-                    <a className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900"
-                       href={p.link} target="_blank" rel="noreferrer">
-                      Open
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                  </div>
-                )}
+                </div>
               </article>
             ))}
           </div>
