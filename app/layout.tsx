@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "David Manley — Professor of Philosophy",
   description:
-    "Reasoning, decision-making under uncertainty, and the ethics of emerging technologies and global priorities.",
+    "Reasoning and the philosophy of emerging technologies and global priorities.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
