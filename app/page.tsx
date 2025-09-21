@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
+import VimeoEmbed from "@/components/VimeoEmbed";
 
 export default function Home() {
   return (
@@ -93,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-              <h3 className="font-medium text-lg">CV</h3>
+              <h3 className="font-medium text-lg">Curriculum Vitae</h3>
               <div className="mt-4">
                 <a className="inline-flex items-center justify-center w-full rounded-md bg-slate-900 text-white px-4 py-2.5 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
                    href="/cv.pdf" target="_blank" rel="noreferrer">
@@ -115,7 +116,7 @@ export default function Home() {
           <div className="mt-10 grid gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" />
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
               </div>
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                 Try the text
@@ -126,7 +127,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
-                <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" />
+                <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom" />
               </div>
               <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                 Get the book
@@ -192,16 +193,21 @@ export default function Home() {
 
       {/* Recent Talks */}
       <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
-          <ul className="mt-8 space-y-4">
-            {talks.map((talk: Talk, idx: number) => (
-              <li key={idx}>
-                <h3 className="text-lg font-medium">{talk.title}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
-              </li>
-            ))}
-          </ul>
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
+            <ul className="mt-8 space-y-4">
+              {talks.map((talk: Talk, idx: number) => (
+                <li key={idx}>
+                  <h3 className="text-lg font-medium">{talk.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <VimeoEmbed id="1120516669" />
+          </div>
         </div>
       </section>
 
