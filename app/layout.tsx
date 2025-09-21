@@ -18,11 +18,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">
               <Link href="/" className="font-semibold tracking-tight">{site.name}</Link>
-              <nav className="hidden md:flex gap-6 text-sm">
-                <Link href="/research">Research</Link>
-                <Link href="/teaching">Teaching</Link>
-                <a href={site.links.cv} target="_blank" rel="noreferrer">CV</a>
-              </nav>
+            <nav className="hidden md:flex gap-6 text-sm">
+  <Link href="/#about">About</Link>
+  <Link href="/#research">Research</Link>
+  <Link href="/teaching">Teaching</Link>
+  <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">CV</a>
+</nav>
+
               <ThemeToggle />
             </div>
           </div>
