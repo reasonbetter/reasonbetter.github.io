@@ -10,29 +10,34 @@ export default function Home() {
     <main>
       {/* Hero */}
       <section className="border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
-          <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
-            I work on improving human reasoning, the philosophy of future technology, and global priorities.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3 items-center">
-            <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
-              See publications
-            </Link>
-            <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
-              View courses
-            </Link>
-            <a
-              href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center text-sm font-medium text-slate-800 hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100"
-            >
-              Reason Better
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+        <div className="mx-auto max-w-6xl px-4 py-16 flex items-center gap-8">
+          <div className="flex-shrink-0">
+            <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-full" />
+          </div>
+          <div>
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
+            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
+              I work on improving human reasoning, the philosophy of future technology, and global priorities.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3 items-center">
+              <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                See publications
+              </Link>
+              <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                View courses
+              </Link>
+              <a
+                href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center text-sm font-medium text-slate-800 hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100"
+              >
+                Reason Better
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
