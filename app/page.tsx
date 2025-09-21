@@ -12,7 +12,7 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
               <div className="mt-4 flex gap-3">
@@ -24,7 +24,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-start gap-4">
+            <div className="flex items-center gap-4">
               <div className="flex-shrink-0">
                 <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
               </div>
