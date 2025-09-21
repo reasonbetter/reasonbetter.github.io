@@ -258,6 +258,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact */}
+      <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-xl font-semibold">Get in touch</h2>
+              <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
+                Email is best. For students: please include course number in the subject line. For press or speaking invites, include a short description and proposed dates.
+              </p>
+              <div className="mt-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm font-medium text-slate-800 dark:text-slate-200 hover:underline">
+                  dmanley@umich.edu
+                </a>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-xl font-semibold">Elsewhere</h2>
+              <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
+                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
+                <li><a href="https://scholar.google.com/" className="hover:underline">Google Scholar</a></li>
+                <li><a href="https://philpeople.org/" className="hover:underline">PhilPeople</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
