@@ -109,6 +109,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Recent Talks */}
+      <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
+            <ul className="mt-8 space-y-4">
+              {talks.map((talk: Talk, idx: number) => (
+                <li key={idx}>
+                  <h3 className="text-lg font-medium whitespace-pre-line">{talk.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <VimeoEmbed id="1120516669" />
+          </div>
+        </div>
+      </section>
+
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
@@ -191,30 +211,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Talks */}
-      <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
-            <ul className="mt-8 space-y-4">
-              {talks.map((talk: Talk, idx: number) => (
-                <li key={idx}>
-                  <h3 className="text-lg font-medium">{talk.title}</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <VimeoEmbed id="1120516669" />
-          </div>
-        </div>
-      </section>
-
       {/* Teaching */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Teaching</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
