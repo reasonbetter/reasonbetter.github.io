@@ -38,7 +38,7 @@ export default function Home() {
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-12 gap-8">
-          <div className="md-col-span-7">
+          <div className="md:col-span-7">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
               I’m a tenured professor at the University of Michigan, Ann Arbor. My recent work focuses on how people can
@@ -53,14 +53,14 @@ export default function Home() {
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="https://scholar.google.com/" target="_blank" rel="noreferrer">
                 Google Scholar
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="https://philpeople.org/" target="_blank" rel="noreferrer">
                 PhilPeople
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -110,24 +110,33 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center tracking-tight">Books</h2>
-          <div className="mt-10 grid gap-4 md:grid-cols-3 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
+          <div className="mt-10 grid gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
-              <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" width={250} height={375} className="mx-auto" />
+              <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" width={300} height={450} className="mx-auto" />
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                 Try the text
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <Image src="/images/reference-book.jpg" alt="Reference book cover" width={250} height={375} className="mx-auto" />
+              <Image src="/images/reference-book.jpg" alt="Reference book cover" width={300} height={450} className="mx-auto" />
               <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                 Get the book
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" width={250} height={375} className="mx-auto" />
+              <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" width={300} height={450} className="mx-auto" />
               <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                 Get the book
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </a>
             </div>
           </div>
@@ -221,6 +230,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact */}
+      <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-xl font-semibold">Get in touch</h2>
+              <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
+                Email is best. For students: please include course number in the subject line. For press or speaking invites, include a short description and proposed dates.
+              </p>
+              <div className="mt-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm font-medium text-slate-800 dark:text-slate-200 hover:underline">
+                  dmanley@umich.edu
+                </a>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-xl font-semibold">Elsewhere</h2>
+              <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
+                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
+                <li><a href="https://scholar.google.com/" className="hover:underline">Google Scholar</a></li>
+                <li><a href="https://philpeople.org/" className="hover:underline">PhilPeople</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
