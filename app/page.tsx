@@ -65,7 +65,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 max-w-sm">
+          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
             <h3 className="font-medium text-lg">Contact</h3>
             <div className="mt-4 space-y-3">
               <div className="flex items-center">
@@ -81,7 +81,7 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300">
+                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300 whitespace-nowrap">
                   University of Michigan, Ann Arbor
                 </div>
               </div>
