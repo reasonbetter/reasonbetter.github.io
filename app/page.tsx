@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="border-b border-slate-200 dark:border-slate-800 pb-8 md:pb-0">
+      <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
-        <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
+        <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
