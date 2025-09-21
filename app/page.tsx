@@ -107,7 +107,11 @@ export default function Home() {
               I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-8 dark:hidden">
+              <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={400} height={100} />
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 Download CV
