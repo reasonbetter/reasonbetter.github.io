@@ -37,7 +37,7 @@ export const publications: Publication[] = [
     note: "Cognitive pitfalls are pervasive when assessing evidential arguments about the existence of God.",
   },
   {
-    title: "Quantifier Variance (with Rohan Sud)",
+    title: "Quantifier Variance",
     venue: "in <em>The Routledge Handbook of Metametaphysics</em>, eds. R. Bliss & J.T.M Miller",
     link: "/papers/5D8AE1DE-E286-11EC-BE8A-F62EAAC88004.pdf",
     tags: ["metaontology", "semantics", "deflationism"],
