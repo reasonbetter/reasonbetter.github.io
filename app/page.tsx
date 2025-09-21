@@ -165,7 +165,7 @@ export default function Home() {
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
               </div>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Try the text
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -176,7 +176,7 @@ export default function Home() {
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom" />
               </div>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -187,7 +187,7 @@ export default function Home() {
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" layout="fill" objectFit="cover" />
               </div>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -203,7 +203,11 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Research &amp; Publications</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
-            Selected entries; see the CV for a full list.
+            Selected entries;{" "}
+            <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
+              see the CV
+            </a>{" "}
+            for a full list.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -221,7 +225,7 @@ export default function Home() {
                 )}
                 {p.link && (
                   <div className="mt-5">
-                    <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+                    <a className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900"
                        href={p.link} target="_blank" rel="noreferrer">
                       Open
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
