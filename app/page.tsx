@@ -91,7 +91,9 @@ export default function Home() {
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           <div className="hidden md:block md:col-span-3">
-            <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+            <div className="relative h-full">
+              <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="cover" className="rounded-lg" />
+            </div>
           </div>
           <div className="md:col-span-9">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>

@@ -21,14 +21,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">
               <Link href="/" className="font-bold tracking-tight text-lg">David Manley</Link>
-              <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-700 dark:text-slate-300">
-                <Link href="/#about" className="hover:text-slate-900 dark:hover:text-slate-100">About</Link>
-                <Link href="/#research" className="hover:text-slate-900 dark:hover:text-slate-100">Research</Link>
-                <Link href="/#download" className="hover:text-slate-900 dark:hover:text-slate-100">CV</Link>
-                <Link href="/teaching" className="hover:text-slate-900 dark:hover:text-slate-100">Teaching</Link>
-                <Link href="/#contact" className="hover:text-slate-900 dark:hover:text-slate-100">Contact</Link>
-              </nav>
-              <ThemeToggle />
+              <div className="flex items-center gap-6">
+                <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <Link href="/#about" className="hover:text-slate-900 dark:hover:text-slate-100">About</Link>
+                  <Link href="/#talks" className="hover:text-slate-900 dark:hover:text-slate-100">Talks</Link>
+                  <Link href="/#books" className="hover:text-slate-900 dark:hover:text-slate-100">Books</Link>
+                  <Link href="/#research" className="hover:text-slate-900 dark:hover:text-slate-100">Research</Link>
+                  <Link href="/teaching" className="hover:text-slate-900 dark:hover:text-slate-100">Teaching</Link>
+                </nav>
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </header>
