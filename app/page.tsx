@@ -1,6 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
-import { publications } from "../lib/publications";
+import Image from "next/image";
+import { publications, Publication } from "@/lib/publications";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       {/* Hero */}
       <section className="border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">Professor of Philosophy</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">David Manley</h1>
           <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
             I work on reasoning, decision-making under uncertainty, and the ethics of emerging technologies and global priorities.
           </p>
@@ -20,10 +21,10 @@ export default function Home() {
               View courses
             </Link>
             <a
-              href="https://tophat.com/marketplace/social-science/philosophy/product/685660910"
+              href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-900"
+              className="text-sm underline hover:text-slate-600 dark:hover:text-slate-400"
             >
               Reason Better
             </a>
@@ -59,14 +60,41 @@ export default function Home() {
               <h3 className="font-medium">Contact</h3>
               <div className="mt-3 text-sm space-y-2">
                 <div>University of Michigan, Ann Arbor</div>
-                <div><a className="underline" href="mailto:david.manley@umich.edu">david.manley@umich.edu</a></div>
+                <div><a className="underline" href="mailto:dmanley@umich.edu">dmanley@umich.edu</a></div>
                 <a
-                  href="mailto:david.manley@umich.edu?subject=Inquiry"
+                  href="mailto:dmanley@umich.edu?subject=Inquiry"
                   className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-900"
                 >
                   Email me
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Books */}
+      <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center">Books</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3 text-center">
+            <div>
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer">
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" width={200} height={300} className="mx-auto" />
+                <span className="mt-2 block text-sm underline">Reason Better</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer">
+                <Image src="/images/reference-book.jpg" alt="Reference book cover" width={200} height={300} className="mx-auto" />
+                <span className="mt-2 block text-sm underline">Reference</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer">
+                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" width={200} height={300} className="mx-auto" />
+                <span className="mt-2 block text-sm underline">Metametaphysics</span>
+              </a>
             </div>
           </div>
         </div>
@@ -81,7 +109,7 @@ export default function Home() {
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {publications.map((p, idx) => (
+            {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow transition-shadow">
                 <h3 className="text-base md:text-lg font-medium leading-snug">{p.title}</h3>
                 <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
@@ -90,7 +118,7 @@ export default function Home() {
                 {p.note && <p className="mt-3 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 {!!p.tags?.length && (
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
+                    {p.tags.map((t: string) => (
                       <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full text-xs">{t}</span>
                     ))}
                   </div>
