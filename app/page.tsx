@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="border-b border-slate-200 dark:border-slate-800">
+      <section className="border-b border-slate-200 dark:border-slate-800 pb-8 md:pb-0">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
           <div className="space-y-6">
@@ -28,7 +28,7 @@ export default function Home() {
               <div className="w-1/2 max-w-[150px] flex-shrink-0">
                 <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
               </div>
-              <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tight">
+              <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
-            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tight">
+            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
@@ -100,13 +100,13 @@ export default function Home() {
           </div>
           <div className="md:col-span-9">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
             </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
               Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
               </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
             </p>
 
@@ -163,7 +163,7 @@ export default function Home() {
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
-          <div className="mt-10 grid gap-2 md:grid-cols-3 text-center">
+          <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
