@@ -12,8 +12,8 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
-          <div className="grid grid-cols-2 gap-x-4 gap-y-4 items-start">
-            <div className="col-span-2">
+          <div className="space-y-4">
+            <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
               <div className="mt-4 flex gap-3">
                 <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
@@ -24,12 +24,14 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex-shrink-0">
-              <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+              </div>
+              <p className="text-lg text-slate-700 dark:text-slate-300">
+                I work on improving human reasoning, the philosophy of future technology, and global priorities.
+              </p>
             </div>
-            <p className="text-lg text-slate-700 dark:text-slate-300">
-              I work on improving human reasoning, the philosophy of future technology, and global priorities.
-            </p>
           </div>
         </div>
 
@@ -72,13 +74,13 @@ export default function Home() {
           <div className="md:col-span-7">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
-              I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. I teach at the graduate and undergraduate level in a wide range of areas in philosophy. 
+              I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
             </p>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
-              My past research has been mainly about semantics, ontology, probability, and evidence. I now work on philosophical issues connected with human reasoning, future technology and global priorities.
+              Much of my past research was about semantics, ontology, and probability. I now work on reasoning, the philosophy of future technology, and global priorities.
               </p>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
-              I also promote rethinking the standard undergraduate philosophical curriculum, especially for non-majors. I'm the author of <em>Reason Better</em>, an accessible introduction to critical thinking.
+              I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
