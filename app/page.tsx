@@ -13,14 +13,16 @@ export default function Home() {
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
           <div className="grid grid-cols-2 gap-x-4 gap-y-4 items-start">
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
-            <div className="flex flex-col gap-3 items-end">
-              <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
-                See publications
-              </Link>
-              <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
-                View courses
-              </Link>
+            <div className="col-span-2">
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
+              <div className="mt-4 flex gap-3">
+                <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                  See publications
+                </Link>
+                <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                  View courses
+                </Link>
+              </div>
             </div>
             <div className="flex-shrink-0">
               <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
