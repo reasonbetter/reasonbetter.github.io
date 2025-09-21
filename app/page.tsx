@@ -23,6 +23,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+  <div className="mx-auto max-w-6xl px-4 py-12">
+    <h2 className="text-2xl md:text-3xl font-semibold">About</h2>
+    <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+      I work on reasoning, decision-making under uncertainty, and the ethics of emerging technologies and global priorities.
+    </p>
+  </div>
+</section>
+
+<section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+  <div className="mx-auto max-w-6xl px-4 py-12">
+    <h2 className="text-2xl md:text-3xl font-semibold">Research</h2>
+    <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+      Abstracts and links; see the CV for a complete list.
+    </p>
+
+    {/* Example item — repeat this block for more entries, or replace with your own list */}
+    <article className="mt-8">
+      <h3 className="text-lg font-medium">The Ethics, Economics, and Demographics of Delaying Aging</h3>
+      <p className="text-sm text-slate-600 dark:text-slate-400">forthcoming in <em>Essays on Longtermism</em>, OUP.</p>
+      <p className="mt-2">
+        We argue that the social benefits of delaying aging would be enormous across ethical frameworks.
+      </p>
+    </article>
+  </div>
+</section>
 
       {/* Featured talk */}
       <section className="border-b border-slate-200 dark:border-slate-800">
