@@ -41,21 +41,21 @@ export const publications: Publication[] = [
     venue: "in <em>The Routledge Handbook of Metametaphysics</em>, eds. R. Bliss & J.T.M Miller",
     link: "/papers/5D8AE1DE-E286-11EC-BE8A-F62EAAC88004.pdf",
     tags: ["metaontology", "semantics", "deflationism"],
-    note: "An overview and limited defense of quantifier variance.",
+    note: "An overview and limited defense of quantifier variance. (Co-authored with Rohan Sud)",
   },
   {
-    title: "Dispositions Without Teleology (with Ryan Wasserman)",
+    title: "Dispositions Without Teleology",
     venue: "<em>Oxford Studies in Metaphysics</em>, vol. 10: 47-59",
     link: "/papers/dispositions+without+teleology.pdf",
     tags: ["metaphysics", "dispositions", "teleology"],
-    note: "Rejects teleological accounts of dispositions and defends our view against new objections.",
+    note: "Rejects teleological accounts of dispositions and defends our view against new objections. (Co-authored with Ryan Wasserman)",
   },
   {
-    title: "The Folk Probably Do Think What You Think They Think (with Billy Dunaway & Anna Edmonds)",
+    title: "The Folk Probably Do Think What You Think They Think",
     venue: "<em>Australasian Journal of Philosophy</em>, 91(3): 421–441",
     link: "/papers/metaxphi.pdf",
     tags: ["experimental philosophy", "metaphilosophy", "analysis"],
-    note: "Philosophers predict ‘surprising’ x-phi results; clarifying the role of experiments in philosophical analysis."
+    note: "Philosophers predict ‘surprising’ x-phi results; clarifying the role of experiments in philosophical analysis. (Co-authored with Billy Dunaway & Anna Edmonds)",
   },
   {
     title: "Dispositionality: Beyond the Biconditionals",
@@ -65,11 +65,11 @@ export const publications: Publication[] = [
     note: "What is it to be a disposition? Biconditional 'analyses' of dispositions don't go far enough.",
   },
   {
-    title: "Dispositions, Conditionals, and Counterexamples (with Ryan Wasserman)",
+    title: "Dispositions, Conditionals, and Counterexamples",
     venue: "<em>Mind</em>, 120: 1191–1227",
     link: "/papers/fzn003.pdf",
     tags: ["metaphysics", "philosophy of language","dispositions"],
-    note: "Defends our account of dispositions; considers the nature of conditionals and centering.",
+    note: "Defends our account of dispositions; considers the nature of conditionals and centering. (Co-authored with Ryan Wasserman)",
   },
   {
     title: "When Best Theories Go Bad",
@@ -86,11 +86,11 @@ export const publications: Publication[] = [
     note: "Introduces the contemporary landscape of metaontology; offers a limited defense of ontological deflationism.",
   },
   {
-    title: "On Linking Dispositions With Conditionals (with Ryan Wasserman)",
+    title: "On Linking Dispositions With Conditionals",
     venue: "<em>Mind</em>, 117: 59–84",
     link: "/papers/On+Linking+Dispositions.pdf",
     tags: ["metaphysics", "philosophy of language", "dispositions"],
-    note: "Raises new problems for conditional accounts of dispositions; offers a new account that solves them",
+    note: "Raises new problems for conditional accounts of dispositions; offers a new account that solves them. (Co-authored with Ryan Wasserman)",
   },
   {
     title: "Safety, Content, Apriority, Self-Knowledge",
@@ -100,10 +100,10 @@ export const publications: Publication[] = [
     note: "Revises the epistemic condition of <em>safety</em>; rethinks the a priori in light of semantic externalism",
   },
     {
-    title: "A Gradable Approach to Dispositions (with Ryan Wasserman)",
+    title: "A Gradable Approach to Dispositions",
     venue: "<em>The Philosophical Quarterly</em>, 57: 68–75",
     link: "/papers/gad+published.pdf",
     tags: ["metaphysics", "philosophy of language", "dispositions"],
-    note: "Accounts for degrees of dispositions while avoiding the problems of finks and masks.",
+    note: "Accounts for degrees of dispositions while avoiding the problems of finks and masks. (Co-authored with Ryan Wasserman) ",
   },
 ];
