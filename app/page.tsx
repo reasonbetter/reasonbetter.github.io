@@ -211,7 +211,7 @@ export default function Home() {
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md">
                 <h3 className="text-lg font-semibold leading-snug">{p.title}</h3>
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                  {p.venue}{p.year ? `, ${p.year}` : ""}
+                  {p.venue}
                 </p>
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 {!!p.tags?.length && (
@@ -250,7 +250,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold">Phil 450: Philosophy of Emerging Technology</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
-                AI, climate engineering, VR, surveillance, gene editing, anti-aging, engineered viruses; well-being, agency, risks, and how to shape a better future.
+                How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
               </p>
               <div className="mt-5">
                 <Link href="/teaching/phil-450" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
@@ -262,9 +262,8 @@ export default function Home() {
               <h3 className="text-lg font-semibold">Phil 360: Global Priorities</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
-                World’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies; interdisciplinary.
-              </p>
-              <div className="mt-5">
+                An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
+                </p>
                 <Link href="/teaching/phil-360" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                   Info & Readings
                 </Link>
@@ -274,7 +273,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold">Phil 183: Critical Reasoning</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
-                Practical reasoning tools from psychology, behavioral econ, logic, probability, decision theory; biases, evidence, causation.
+                Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
               </p>
               <div className="mt-5">
                 <Link href="/teaching/phil-183" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
@@ -283,8 +282,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Contact */}
       <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
@@ -293,7 +291,7 @@ export default function Home() {
             <div>
               <h2 className="text-xl font-semibold">Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
-                Email is best. For students: please include course number in the subject line. For press or speaking invites, include a short description and proposed dates.
+                Email is best. For students: please include your course number in the subject line.
               </p>
               <div className="mt-4 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
