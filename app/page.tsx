@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         {/* Desktop Hero */}
-        <div className="mx-auto max-w-6xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
+        <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           <div className="hidden md:block md:col-span-3">
             <div className="relative h-full">
               <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="contain" className="rounded-lg" />
@@ -109,21 +109,21 @@ export default function Home() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-                 href="/cv.pdf" target="_blank" rel="noreferrer">
+                 href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-                 href="https://scholar.google.com/" target="_blank" rel="noreferrer">
+                 href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-                 href="https://philpeople.org/" target="_blank" rel="noreferrer">
+                 href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -136,11 +136,11 @@ export default function Home() {
 
       {/* Recent Talks */}
       <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
-          <div className="mt-8 grid md:grid-cols-2 gap-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <ul className="space-y-4">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
+              <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
                     <h3 className="text-lg font-medium whitespace-pre-line">{talk.title}</h3>
@@ -158,7 +158,7 @@ export default function Home() {
 
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
           <div className="mt-10 grid gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
@@ -200,7 +200,7 @@ export default function Home() {
 
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Research &amp; Publications</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries; see the CV for a full list.
@@ -240,7 +240,7 @@ export default function Home() {
 
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
@@ -288,7 +288,7 @@ export default function Home() {
 
       {/* Contact */}
       <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-xl font-semibold">Get in touch</h2>
@@ -309,8 +309,8 @@ export default function Home() {
               <h2 className="text-xl font-semibold">Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
-                <li><a href="https://scholar.google.com/" className="hover:underline">Google Scholar</a></li>
-                <li><a href="https://philpeople.org/" className="hover:underline">PhilPeople</a></li>
+                <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
+                <li><a href="https://philpeople.org/profiles/david-manley" className="hover:underline">PhilPeople</a></li>
               </ul>
             </div>
           </div>
