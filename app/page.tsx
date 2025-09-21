@@ -210,9 +210,7 @@ export default function Home() {
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md">
                 <h3 className="text-lg font-semibold leading-snug">{p.title}</h3>
-                <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                  {p.venue}
-                </p>
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 {!!p.tags?.length && (
                   <div className="mt-4 flex flex-wrap gap-2">
