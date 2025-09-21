@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero */}
       <section className="border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">David Manley</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
           <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
             I work on reasoning, decision-making under uncertainty, and the ethics of emerging technologies and global priorities.
           </p>
@@ -38,8 +38,8 @@ export default function Home() {
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-7">
-            <h2 className="text-2xl md:text-3xl font-semibold">About</h2>
+          <div className="md-col-span-7">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
               I’m a tenured professor at the University of Michigan, Ann Arbor. My recent work focuses on how people can
               reason better in complex, high-stakes environments, including the evaluation of future technologies and
@@ -67,8 +67,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Contact card (no mailing list, just an email button) */}
-          <div className="md:col-span-5">
+          {/* Contact and CV download cards */}
+          <div className="md:col-span-5 space-y-6">
             <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
               <h3 className="font-medium text-lg">Contact</h3>
               <div className="mt-4 space-y-3">
@@ -91,6 +91,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
+              <h3 className="font-medium text-lg">Download</h3>
+              <div className="mt-4">
+                <a className="inline-flex items-center justify-center w-full rounded-md bg-slate-900 text-white px-4 py-2.5 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+                   href="/cv.pdf" target="_blank" rel="noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download CV (PDF)
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -98,24 +110,24 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center">Books</h2>
-          <div className="mt-8 grid gap-8 md:grid-cols-3 text-center">
-            <div>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" width={200} height={300} className="mx-auto" />
-                <span className="mt-2 block text-sm underline">Reason Better</span>
+          <h2 className="text-2xl md:text-3xl font-semibold text-center tracking-tight">Books</h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-3 text-center">
+            <div className="flex flex-col items-center">
+              <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" width={250} height={375} className="mx-auto" />
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                Try the text
               </a>
             </div>
-            <div>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer">
-                <Image src="/images/reference-book.jpg" alt="Reference book cover" width={200} height={300} className="mx-auto" />
-                <span className="mt-2 block text-sm underline">Reference</span>
+            <div className="flex flex-col items-center">
+              <Image src="/images/reference-book.jpg" alt="Reference book cover" width={250} height={375} className="mx-auto" />
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                Get the book
               </a>
             </div>
-            <div>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer">
-                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" width={200} height={300} className="mx-auto" />
-                <span className="mt-2 block text-sm underline">Metametaphysics</span>
+            <div className="flex flex-col items-center">
+              <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" width={250} height={375} className="mx-auto" />
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                Get the book
               </a>
             </div>
           </div>
@@ -125,7 +137,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold">Research &amp; Publications</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Research &amp; Publications</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries; see the CV for a full list.
           </p>
@@ -162,95 +174,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CV section with download button */}
-      <section id="cv" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+      {/* Teaching */}
+      <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold">Curriculum Vitae</h2>
-          <p className="mt-3 text-slate-700 dark:text-slate-300">Short bio and downloadable CV.</p>
-          <div className="mt-6 grid md:grid-cols-3 gap-6">
-            <div className="md:col-span-2 rounded-xl border border-slate-200 dark:border-slate-800 p-5">
-              <h3 className="font-medium">Bio (short)</h3>
-              <p className="mt-3 text-sm text-slate-700 dark:text-slate-300">
-                David Manley is a professor of philosophy at the University of Michigan. His research centers on reasoning,
-                decision-making under uncertainty, and evaluating long-run impacts of emerging technologies.
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Teaching</h2>
+          <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+            Course pages with longer descriptions and readings.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">Phil 450: Philosophy of Emerging Technology</h3>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
+              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+                AI, climate engineering, VR, surveillance, gene editing, anti-aging, engineered viruses; well-being, agency, risks, and how to shape a better future.
               </p>
-            </div>
-            <div className="rounded-xl border border-slate-200 dark:border-slate-800 p-5">
-              <h3 className="font-medium">Download</h3>
-              <a
-                href="/cv/david-manley-cv.pdf"
-                className="mt-3 inline-flex w-full items-center justify-center rounded-md border border-slate-300 px-3 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-900"
-              >
-                Download CV (PDF)
-              </a>
-              <p className="mt-2 text-xs text-slate-500">Place your file at <code>/public/cv/david-manley-cv.pdf</code>.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Teaching (buttons link to course pages) */}
-      <section id="teaching" className="scroll-mt-24">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold">Teaching</h2>
-          <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">Course pages with longer descriptions and readings.</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/teaching/phil-450" className="inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-900">Phil 450 — Emerging Technology</Link>
-            <Link href="/teaching/phil-360" className="inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-900">Phil 360 — Global Priorities</Link>
-            <Link href="/teaching/phil-183" className="inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-900">Phil 183 — Critical Reasoning</Link>
-            <Link href="/teaching" className="inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-900">Teaching index →</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Download CV */}
-      <section id="download" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-            <h2 className="text-xl font-semibold">Download</h2>
-            <div className="mt-4">
-              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2.5 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
-                 href="/cv.pdf" target="_blank" rel="noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Download CV (PDF)
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-xl font-semibold">Get in touch</h2>
-              <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
-                Email is best. For students: please include course number in the subject line. For press or speaking invites, include a short description and proposed dates.
-              </p>
-              <div className="mt-4 flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm font-medium text-slate-800 dark:text-slate-200 hover:underline">
-                  dmanley@umich.edu
-                </a>
+              <div className="mt-5">
+                <Link href="/teaching/phil-450" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                  Info & Readings
+                </Link>
               </div>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold">Elsewhere</h2>
-              <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
-                <li><a href="https://scholar.google.com/" className="hover:underline">Google Scholar</a></li>
-                <li><a href="https://philpeople.org/" className="hover:underline">PhilPeople</a></li>
-              </ul>
+            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">Phil 360: Global Priorities</h3>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
+              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+                World’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies; interdisciplinary.
+              </p>
+              <div className="mt-5">
+                <Link href="/teaching/phil-360" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                  Info & Readings
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">Phil 183: Critical Reasoning</h3>
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
+              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+                Practical reasoning tools from psychology, behavioral econ, logic, probability, decision theory; biases, evidence, causation.
+              </p>
+              <div className="mt-5">
+                <Link href="/teaching/phil-183" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                  Info & Readings
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
     </main>
   );
 }
