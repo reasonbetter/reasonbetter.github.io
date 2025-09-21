@@ -10,16 +10,35 @@ export default function Home() {
     <main>
       {/* Hero */}
       <section className="border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:flex items-center gap-8 grid grid-cols-2">
-          <div className="md:hidden flex-shrink-0 col-start-1 row-start-2">
+        {/* Mobile Hero */}
+        <div className="mx-auto max-w-6xl px-4 py-16 md:hidden">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 items-start">
+            <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
+            <div className="flex flex-col gap-3 items-end">
+              <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                See publications
+              </Link>
+              <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                View courses
+              </Link>
+            </div>
+            <div className="flex-shrink-0">
+              <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+            </div>
+            <p className="text-lg text-slate-700 dark:text-slate-300">
+              I work on improving human reasoning, the philosophy of future technology, and global priorities.
+            </p>
+          </div>
+        </div>
+
+        {/* Desktop Hero */}
+        <div className="mx-auto max-w-6xl px-4 py-16 hidden md:flex items-center gap-8">
+          <div className="flex-shrink-0">
             <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
           </div>
-          <div className="hidden md:block flex-shrink-0">
-            <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
-          </div>
-          <div className="col-span-2 md:col-span-1">
+          <div>
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
-            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 md:block hidden">
+            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
@@ -33,7 +52,7 @@ export default function Home() {
                 href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
                 target="_blank"
                 rel="noreferrer"
-                className="hidden md:inline-flex items-center text-sm font-medium text-slate-800 hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100"
+                className="inline-flex items-center text-sm font-medium text-slate-800 hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100"
               >
                 Reason Better
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,9 +61,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 md:hidden col-start-2 row-start-2">
-            I work on improving human reasoning, the philosophy of future technology, and global priorities.
-          </p>
         </div>
       </section>
 
@@ -123,20 +139,22 @@ export default function Home() {
 
       {/* Recent Talks */}
       <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
-            <ul className="mt-8 space-y-4">
-              {talks.map((talk: Talk, idx: number) => (
-                <li key={idx}>
-                  <h3 className="text-lg font-medium whitespace-pre-line">{talk.title}</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <VimeoEmbed id="1120516669" />
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
+          <div className="mt-8 grid md:grid-cols-2 gap-8">
+            <div className="order-2 md:order-1">
+              <ul className="space-y-4">
+                {talks.map((talk: Talk, idx: number) => (
+                  <li key={idx}>
+                    <h3 className="text-lg font-medium whitespace-pre-line">{talk.title}</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="order-1 md:order-2">
+              <VimeoEmbed id="1120516669" />
+            </div>
           </div>
         </div>
       </section>
