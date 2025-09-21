@@ -92,7 +92,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           <div className="hidden md:block md:col-span-3">
             <div className="relative h-full">
-              <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="cover" className="rounded-lg" />
+              <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="contain" className="rounded-lg" />
             </div>
           </div>
           <div className="md:col-span-9">

@@ -13,7 +13,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/teaching" className="text-sm underline">← Teaching</Link>
+      <Link href="/#teaching" className="text-sm underline">← Upcoming Courses</Link>
       <h1 className="mt-2 text-3xl font-semibold">{course.code}: {course.name}</h1>
       <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">{course.desc}</p>
       {course.readings.length > 0 && (

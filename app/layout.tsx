@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <Link href="/#talks" className="hover:text-slate-900 dark:hover:text-slate-100">Talks</Link>
                   <Link href="/#books" className="hover:text-slate-900 dark:hover:text-slate-100">Books</Link>
                   <Link href="/#research" className="hover:text-slate-900 dark:hover:text-slate-100">Research</Link>
-                  <Link href="/teaching" className="hover:text-slate-900 dark:hover:text-slate-100">Teaching</Link>
+                  <Link href="/#teaching" className="hover:text-slate-900 dark:hover:text-slate-100">Teaching</Link>
                 </nav>
                 <ThemeToggle />
               </div>
