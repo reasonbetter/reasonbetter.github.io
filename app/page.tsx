@@ -28,9 +28,12 @@ export default function Home() {
               <div className="w-1/2 max-w-[150px] flex-shrink-0">
                 <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
               </div>
-              <p className="text-lg text-slate-700 dark:text-slate-300">
+              <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tight">
                 I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
               </p>
+            </div>
+            <div className="mt-4 dark:hidden">
+              <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={400} height={100} />
             </div>
           </div>
         </div>
@@ -39,7 +42,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
-            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
+            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tight">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
@@ -62,29 +65,24 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 flex items-center gap-5">
-            <div className="flex-shrink-0">
-              <Image src="/images/U-M_Logo-Hex.png" alt="University of Michigan Logo" width={80} height={80} />
-            </div>
-            <div>
-              <h3 className="font-medium text-lg">Contact</h3>
-              <div className="mt-2 space-y-2 text-sm">
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <a href="mailto:dmanley@umich.edu" className="ml-2 text-slate-700 dark:text-slate-300 hover:underline">
-                    dmanley@umich.edu
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <div className="ml-2 text-slate-700 dark:text-slate-300 whitespace-nowrap">
-                    Ann Arbor, Michigan
-                  </div>
+          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 max-w-sm">
+            <h3 className="font-medium text-lg">Contact</h3>
+            <div className="mt-4 space-y-3">
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                  dmanley@umich.edu
+                </a>
+              </div>
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300">
+                  University of Michigan, Ann Arbor
                 </div>
               </div>
             </div>
@@ -102,13 +100,13 @@ export default function Home() {
           </div>
           <div className="md:col-span-9">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
               I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
             </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
               Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
               </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
+            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tight">
               I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
             </p>
 
