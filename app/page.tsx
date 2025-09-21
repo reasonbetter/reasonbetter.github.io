@@ -29,7 +29,7 @@ export default function Home() {
                 <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
               </div>
               <p className="text-lg text-slate-700 dark:text-slate-300">
-                I work on improving human reasoning, the philosophy of future technology, and global priorities.
+                I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function Home() {
               I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
             </p>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
-              Much of my past research was about semantics, ontology, and probability. I now work on reasoning, the philosophy of future technology, and global priorities.
+              Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
               </p>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
               I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
