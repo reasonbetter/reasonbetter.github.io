@@ -257,9 +257,9 @@ export default function Home() {
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
               </p>
               <div className="mt-5">
-                <Link href="/teaching/phil-450" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
-                </Link>
+                </span>
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
@@ -269,9 +269,9 @@ export default function Home() {
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
               </p>
               <div className="mt-5">
-                <Link href="/teaching/phil-360" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
-                </Link>
+                </span>
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
@@ -281,9 +281,9 @@ export default function Home() {
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
               </p>
               <div className="mt-5">
-                <Link href="/teaching/phil-183" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
-                </Link>
+                </span>
               </div>
             </div>
           </div>

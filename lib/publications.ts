@@ -97,7 +97,7 @@ export const publications: Publication[] = [
     venue: "<em>Mind</em>, 117: 59–84",
     link: "/papers/sca+published.pdf",
     tags: ["epistemology", "the apriori", "semantic externalism"],
-    note: "Revises the epistemic condition of <em>safety</em>; rethinks the a priori in light of semantic externalism",
+    note: "Revises the epistemic condition of 'safety'; rethinks the a priori in light of semantic externalism",
   },
     {
     title: "A Gradable Approach to Dispositions",
