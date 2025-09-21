@@ -287,6 +287,9 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className="mt-10 text-sm text-slate-500">
+            © {new Date().getFullYear()} David Manley. All rights reserved.
+          </div>
         </div>
       </footer>
     </main>
