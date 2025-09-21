@@ -1,11 +1,7 @@
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: { unoptimized: true },
-  // Add the following lines
-  basePath: '/reasonbetter.github.io',
-  assetPrefix: '/reasonbetter.github.io',
+module.exports = {
+  output: 'export',               // produce static HTML files into ./out
+  images: { unoptimized: true },  // required for static export
+  // IMPORTANT for user sites:
+  // Do NOT add basePath or assetPrefix here.
 };
-
-module.exports = nextConfig;
