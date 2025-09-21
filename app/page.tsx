@@ -25,10 +25,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="flex-shrink-0">
-                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+              <div className="w-1/2 flex-shrink-0">
+                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
               </div>
-              <p className="text-lg text-slate-700 dark:text-slate-300">
+              <p className="text-lg text-slate-700 dark:text-slate-300 w-1/2">
                 I work on improving human reasoning, the philosophy of future technology, and global priorities.
               </p>
             </div>
