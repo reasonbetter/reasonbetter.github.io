@@ -36,10 +36,7 @@ export default function Home() {
         </div>
 
         {/* Desktop Hero */}
-        <div className="mx-auto max-w-6xl px-4 py-16 hidden md:flex items-center gap-8">
-          <div className="flex-shrink-0">
-            <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
-          </div>
+        <div className="mx-auto max-w-6xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">
@@ -65,13 +62,38 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 max-w-sm">
+            <h3 className="font-medium text-lg">Contact</h3>
+            <div className="mt-4 space-y-3">
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                  dmanley@umich.edu
+                </a>
+              </div>
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <div className="ml-3 text-sm text-slate-700 dark:text-slate-300">
+                  University of Michigan, Ann Arbor
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-7">
+          <div className="hidden md:block md:col-span-3">
+            <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg" />
+          </div>
+          <div className="md:col-span-9">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
               I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
@@ -84,6 +106,13 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+                 href="/cv.pdf" target="_blank" rel="noreferrer">
+                Download CV
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="https://scholar.google.com/" target="_blank" rel="noreferrer">
                 Google Scholar
@@ -98,44 +127,6 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-            </div>
-          </div>
-
-          {/* Contact and CV download cards */}
-          <div className="md:col-span-5 space-y-6">
-            <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-              <h3 className="font-medium text-lg">Contact</h3>
-              <div className="mt-4 space-y-3">
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
-                    dmanley@umich.edu
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <div className="ml-3 text-sm text-slate-700 dark:text-slate-300">
-                    University of Michigan, Ann Arbor
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-              <h3 className="font-medium text-lg">Curriculum Vitae</h3>
-              <div className="mt-4">
-                <a className="inline-flex items-center justify-center w-full rounded-md bg-slate-900 text-white px-4 py-2.5 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
-                   href="/cv.pdf" target="_blank" rel="noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Download CV (PDF)
-                </a>
-              </div>
             </div>
           </div>
         </div>
