@@ -25,10 +25,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="w-1/2 flex-shrink-0">
+              <div className="w-1/2 max-w-[150px] flex-shrink-0">
                 <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
               </div>
-              <p className="text-lg text-slate-700 dark:text-slate-300 w-1/2">
+              <p className="text-lg text-slate-700 dark:text-slate-300">
                 I work on improving human reasoning, the philosophy of future technology, and global priorities.
               </p>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 grid md:grid-cols-12 gap-8">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-7">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">
@@ -143,7 +143,7 @@ export default function Home() {
 
       {/* Recent Talks */}
       <section id="talks" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
           <div className="mt-8 grid md:grid-cols-2 gap-8">
             <div className="order-2 md:order-1">
@@ -165,7 +165,7 @@ export default function Home() {
 
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
           <div className="mt-10 grid gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
@@ -207,7 +207,7 @@ export default function Home() {
 
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Research &amp; Publications</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries; see the CV for a full list.
@@ -245,9 +245,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Teaching */}
+      {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
@@ -295,7 +295,7 @@ export default function Home() {
 
       {/* Contact */}
       <footer id="contact" className="scroll-mt-24 bg-slate-50 dark:bg-slate-900">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-xl font-semibold">Get in touch</h2>
