@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-9">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">About</h2>
+            <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Recent Talks</h2>
+              <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${titleFont.className}`}>Recent Talks</h2>
               <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
@@ -190,7 +190,7 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Books</h2>
+          <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
@@ -232,7 +232,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Papers</h2>
+          <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${titleFont.className}`}>Papers</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
@@ -276,7 +276,7 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Upcoming Courses</h2>
+          <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${titleFont.className}`}>Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
@@ -326,7 +326,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-semibold font-garamond">Elsewhere</h2>
+              <h2 className={`text-xl font-semibold ${titleFont.className}`}>Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
@@ -334,7 +334,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h2 className="text-xl font-semibold font-garamond">Get in touch</h2>
+              <h2 className={`text-xl font-semibold ${titleFont.className}`}>Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
