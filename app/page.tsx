@@ -6,13 +6,18 @@ import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
 import VimeoEmbed from "@/components/VimeoEmbed";
 import { EB_Garamond } from "next/font/google";
+import { useState } from "react";
 
 const titleFont = EB_Garamond({ subsets: ["latin"], weight: ["600"], fallback: ["Georgia", "serif"] });
 
 export default function Home() {
-  const copyEmailToClipboard = () => {
-    navigator.clipboard.writeText("dmanley@umich.edu");
-    alert("Email address copied to clipboard!");
+  const [copiedMobile, setCopiedMobile] = useState(false);
+  const [copiedDesktop, setCopiedDesktop] = useState(false);
+
+  const copyEmail = async (setCopied: (v: boolean) => void) => {
+    try { await navigator.clipboard.writeText("dmanley@umich.edu"); } catch {}
+    setCopied(true);
+    setTimeout(() => setCopied(false), 10000);
   };
 
   return (
@@ -25,12 +30,26 @@ export default function Home() {
             <div>
               <h1 className={`text-4xl font-semibold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
               <div className="mt-4 flex flex-wrap gap-3">
-                <button onClick={copyEmailToClipboard} className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  Copy email
+                <button
+                  onClick={() => copyEmail(setCopiedMobile)}
+                  className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 ${copiedMobile ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
+                >
+                  {copiedMobile ? (
+                    <>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                      </svg>
+                      Copied
+                    </>
+                  ) : (
+                    <>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                      Copy email
+                    </>
+                  )}
                 </button>
                 <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
                    href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
@@ -46,7 +65,7 @@ export default function Home() {
                 <Image src="/images/davidmanleyzoom.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
               </div>
               <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
+                Philosopher working on reasoning, emerging technology, and global priorities. Author of <em>Reason Better</em>.
               </p>
             </div>
             <div className="mt-4 dark:hidden">
@@ -60,7 +79,7 @@ export default function Home() {
           <div>
             <h1 className={`text-4xl md:text-5xl font-semibold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-              I work on improving human reasoning, the philosophy of future technology, and global priorities.
+              Philosopher working on reasoning, emerging technology, and global priorities. Author of <em>Reason Better</em>.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
               <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
@@ -76,12 +95,18 @@ export default function Home() {
             <h3 className="font-medium text-lg">Contact</h3>
             <div className="mt-4 space-y-2">
               <div className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <button onClick={copyEmailToClipboard} className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
-                  Copy email address
+                {copiedDesktop ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                )}
+                <button onClick={() => copyEmail(setCopiedDesktop)} className={`ml-3 text-sm hover:underline ${copiedDesktop ? 'text-green-700 dark:text-green-400' : 'text-slate-700 dark:text-slate-300'}`}>
+                  {copiedDesktop ? "Copied" : "Copy email address"}
                 </button>
               </div>
               <div className="flex items-center">
@@ -248,18 +273,18 @@ export default function Home() {
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
-                  <div className="flex justify-between items-end">
+                  <div className="flex justify-between items-end gap-4">
                     {!!p.tags?.length && (
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 pr-4 md:pr-6">
                         {p.tags.map((t: string) => (
                           <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-xs font-medium">{t}</span>
                         ))}
                       </div>
                     )}
                     {p.link && (
-                      <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0"
+                      <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0 whitespace-nowrap"
                          href={p.link} target="_blank" rel="noreferrer">
-                        Open
+                        Read PDF
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
