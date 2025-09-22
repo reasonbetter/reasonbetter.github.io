@@ -12,7 +12,7 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
               <div className="mt-4 flex gap-3">
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4">
               <div className="w-1/2 max-w-[150px] flex-shrink-0">
-                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto" />
+                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
               </div>
               <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           <div className="hidden md:block md:col-span-3">
             <div className="relative h-full">
-              <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="contain" className="rounded-lg" />
+              <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="contain" className="rounded-lg shadow-sm" />
             </div>
           </div>
           <div className="md:col-span-9">
@@ -166,9 +166,9 @@ export default function Home() {
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left rounded-lg shadow-sm" />
               </div>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
                 Try the text
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -177,9 +177,9 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
-                <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom" />
+                <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom rounded-lg shadow-sm" />
               </div>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -188,9 +188,9 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
-                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" layout="fill" objectFit="cover" />
+                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" layout="fill" objectFit="cover" className="rounded-lg shadow-sm" />
               </div>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
