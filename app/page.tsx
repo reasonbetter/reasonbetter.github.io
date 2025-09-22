@@ -274,9 +274,9 @@ export default function Home() {
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
-                  <div className="flex justify-between items-end gap-4">
+                  <div className="flex justify-between items-end gap-2">
                     {!!p.tags?.length && (
-                      <div className="flex flex-wrap gap-2 pr-4 md:pr-6">
+                      <div className="flex flex-wrap gap-2">
                         {p.tags.map((t: string) => (
                           <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-xs font-medium">{t}</span>
                         ))}
