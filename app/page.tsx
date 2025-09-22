@@ -20,7 +20,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight font-garamond">David Manley</h1>
               <div className="mt-4 flex flex-wrap gap-3">
                 <button onClick={copyEmailToClipboard} className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -55,7 +55,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight font-garamond">David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
@@ -77,9 +77,9 @@ export default function Home() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
-                  dmanley@umich.edu
-                </a>
+                <button onClick={copyEmailToClipboard} className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                  Copy email
+                </button>
               </div>
               <div className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-9">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">About</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">About</h2>
             <div className="space-y-2">
               <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Recent Talks</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Recent Talks</h2>
               <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
@@ -187,7 +187,7 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Books</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
@@ -229,7 +229,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Papers</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Papers</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
@@ -273,7 +273,7 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Upcoming Courses</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-semibold font-inter">Elsewhere</h2>
+              <h2 className="text-xl font-semibold font-garamond">Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
@@ -331,7 +331,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h2 className="text-xl font-semibold font-inter">Get in touch</h2>
+              <h2 className="text-xl font-semibold font-garamond">Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
