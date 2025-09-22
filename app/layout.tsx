@@ -3,9 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ThemeToggle from "../components/ThemeToggle";
-import { Inter, Instrument_Sans, EB_Garamond } from "next/font/google";
+import { Instrument_Sans, EB_Garamond } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument" });
 const garamond = EB_Garamond({ subsets: ["latin"], variable: "--font-garamond", weight: "400" });
 
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 ${instrument.variable} ${inter.variable} ${garamond.variable}`}>
+      <body className={`min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 ${instrument.variable} ${garamond.variable}`}>
         <header className="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">

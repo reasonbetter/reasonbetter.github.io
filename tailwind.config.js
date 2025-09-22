@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-instrument)"],
-        inter: ["var(--font-inter)"],
         garamond: ["var(--font-garamond)", "Georgia", "serif"],
       },
       letterSpacing: {
