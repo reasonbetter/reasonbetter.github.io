@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-instrument)"],
+        sans: ["var(--font-lato)", "Inter", "system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"],
+        instrument: ["var(--font-instrument)", "system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"],
         garamond: ["var(--font-garamond)", "Georgia", "serif"],
       },
       letterSpacing: {
