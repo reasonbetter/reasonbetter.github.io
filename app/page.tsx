@@ -1,4 +1,5 @@
 // app/page.tsx
+'use client';
 import Link from "next/link";
 import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
@@ -6,6 +7,11 @@ import { talks, Talk } from "@/lib/talks";
 import VimeoEmbed from "@/components/VimeoEmbed";
 
 export default function Home() {
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText("dmanley@umich.edu");
+    alert("Email address copied to clipboard!");
+  };
+
   return (
     <main>
       {/* Hero */}
@@ -16,14 +22,13 @@ export default function Home() {
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
               <div className="mt-4 flex flex-wrap gap-3">
-                <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
-                   href="mailto:dmanley@umich.edu">
+                <button onClick={copyEmailToClipboard} className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  dmanley@umich.edu
-                </a>
+                  Copy email
+                </button>
                 <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
                    href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
