@@ -78,8 +78,10 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
             <h1 className={`text-4xl md:text-5xl font-semibold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
-            <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-              Philosopher working on reasoning, emerging technology, and global priorities. Author of <em>Reason Better</em>.
+            <p className="mt-3 max-w-xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <span className="md:whitespace-nowrap">Philosopher working on reasoning, emerging technology, and global priorities.</span>
+              <br className="hidden md:block" />
+              <span>Author of <em>Reason Better</em>.</span>
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
               <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
@@ -133,13 +135,13 @@ export default function Home() {
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
-          <div className="hidden md:block md:col-span-3 pt-2 md:pt-14">
+          <div className="hidden md:block md:col-span-3 pt-0">
             <div className="relative h-full">
               <Image src="/images/davidmanley.png" alt="David Manley" layout="fill" objectFit="contain" className="rounded-lg" />
             </div>
           </div>
           <div className="md:col-span-9 text-[1.05rem] md:text-[1.07rem]">
-            <h2 className={`mt-2 md:mt-14 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
+            <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
@@ -195,7 +197,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className={`mt-2 md:mt-14 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Recent Talks</h2>
+              <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Recent Talks</h2>
               <ul className="mt-6 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
@@ -215,7 +217,7 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
@@ -257,7 +259,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Papers</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Papers</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
@@ -284,7 +286,7 @@ export default function Home() {
                     {p.link && (
                       <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0 whitespace-nowrap"
                          href={p.link} target="_blank" rel="noreferrer">
-                        Read PDF
+                        PDF
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
@@ -301,7 +303,7 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Upcoming Courses</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Upcoming Courses</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
@@ -351,7 +353,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className={`mt-2 mb-2 text-[1.35rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Elsewhere</h2>
+              <h2 className={`mt-0 mb-2 text-[1.35rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
@@ -359,7 +361,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h2 className={`mt-2 mb-2 text-[1.35rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Get in touch</h2>
+              <h2 className={`mt-0 mb-2 text-[1.35rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Get in touch</h2>
               <p className="mt-2 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
