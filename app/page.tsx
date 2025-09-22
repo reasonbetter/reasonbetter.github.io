@@ -15,24 +15,22 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
-              <div className="mt-4 space-y-3">
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-900 dark:text-slate-100" viewBox="0 0 20 20" fill="currentColor">
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+                   href="mailto:dmanley@umich.edu">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-900 dark:text-slate-100 hover:underline">
-                    dmanley@umich.edu
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-900 dark:text-slate-100" viewBox="0 0 20 20" fill="currentColor">
+                  Email
+                </a>
+                <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+                   href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
-                  <a href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer" className="ml-3 text-sm text-slate-900 dark:text-slate-100 hover:underline">
-                    Book a meeting
-                  </a>
-                </div>
+                  Book a meeting
+                </a>
               </div>
             </div>
             <div className="flex items-center gap-4">
