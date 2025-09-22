@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4">
               <div className="w-1/2 max-w-[150px] flex-shrink-0">
-                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
+                <Image src="/images/davidmanley.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm object-cover object-[center_30%]" />
               </div>
               <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I work on improving human reasoning, the philosophy of emerging technology, and global priorities.
@@ -201,7 +201,7 @@ export default function Home() {
       {/* Papers & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Papers &amp; Publications</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Papers</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
