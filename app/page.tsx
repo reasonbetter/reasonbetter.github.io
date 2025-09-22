@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* Books */}
-      <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+      <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
