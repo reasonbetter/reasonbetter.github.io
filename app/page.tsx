@@ -25,6 +25,36 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
+              <h3 className="font-medium text-lg font-inter">Contact</h3>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  <a href="mailto:dmanley@umich.edu" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                    dmanley@umich.edu
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                </svg>
+                  <a href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                    Book a meeting
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                  <div className="ml-3 text-sm text-slate-700 dark:text-slate-300 whitespace-nowrap">
+                    University of Michigan, Ann Arbor
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="flex items-center gap-4">
               <div className="w-1/2 max-w-[150px] flex-shrink-0">
                 <Image src="/images/davidmanleyzoom.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
