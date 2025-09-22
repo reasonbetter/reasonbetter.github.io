@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
             <h3 className="font-medium text-lg">Contact</h3>
-            <div className="mt-4 space-y-3">
+            <div className="mt-4 space-y-2">
               <div className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -114,15 +114,15 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-9">
-            <h2 className={`text-[1.6rem] md:text-[1.95rem] font-semibold tracking-[0em] ${titleFont.className}`}>About</h2>
+            <h2 className={`mt-2 md:mt-14 mb-2 text-[1.6rem] md:text-[1.95rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
-              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
               </p>
-              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
                 </p>
-              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
               </p>
             </div>
@@ -170,11 +170,11 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className={`text-[1.6rem] md:text-[1.95rem] font-semibold tracking-[0em] ${titleFont.className}`}>Recent Talks</h2>
-              <ul className="mt-8 space-y-4">
+              <h2 className={`mt-2 md:mt-14 mb-2 text-[1.6rem] md:text-[1.95rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Recent Talks</h2>
+              <ul className="mt-6 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
-                    <h3 className="text-lg font-medium whitespace-pre-line leading-tight tracking-tight">{talk.title}</h3>
+                    <h3 className="text-lg font-semibold leading-tight tracking-tight">{talk.title}</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
                   </li>
                 ))}
@@ -190,13 +190,13 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`text-[1.6rem] md:text-[1.95rem] font-semibold tracking-[0em] ${titleFont.className}`}>Books</h2>
+          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.6rem] md:text-[1.95rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
               </div>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Try the text
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -207,7 +207,7 @@ export default function Home() {
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom" />
               </div>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -218,9 +218,9 @@ export default function Home() {
               <div className="relative w-[300px] h-[450px]">
                 <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" layout="fill" objectFit="cover" />
               </div>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
-                <svg xmlns="http://www.w3.org/0 0 24 24" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -232,8 +232,8 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`text-[1.6rem] md:text-[1.95rem] font-semibold tracking-[0em] ${titleFont.className}`}>Papers</h2>
-          <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.6rem] md:text-[1.95rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Papers</h2>
+          <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
               see the CV
@@ -257,7 +257,7 @@ export default function Home() {
                       </div>
                     )}
                     {p.link && (
-                      <a className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0"
+                      <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900 flex-shrink-0"
                          href={p.link} target="_blank" rel="noreferrer">
                         Open
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -276,8 +276,8 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`text-[1.6rem] md:text-[1.95rem] font-semibold tracking-[0em] ${titleFont.className}`}>Upcoming Courses</h2>
-          <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+          <h2 className={`mt-2 md:mt-14 mb-2 text-[1.6rem] md:text-[1.95rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Upcoming Courses</h2>
+          <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -288,7 +288,7 @@ export default function Home() {
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
               </p>
               <div className="mt-5">
-                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
+                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
                 </span>
               </div>
@@ -300,7 +300,7 @@ export default function Home() {
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
               </p>
               <div className="mt-5">
-                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
+                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
                 </span>
               </div>
@@ -312,7 +312,7 @@ export default function Home() {
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
               </p>
               <div className="mt-5">
-                <span className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
+                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
                   Info & Readings
                 </span>
               </div>
@@ -326,7 +326,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className={`text-[1.3rem] font-semibold tracking-[0em] ${titleFont.className}`}>Elsewhere</h2>
+              <h2 className={`mt-2 mb-2 text-[1.3rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
@@ -334,8 +334,8 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h2 className={`text-[1.3rem] font-semibold tracking-[0em] ${titleFont.className}`}>Get in touch</h2>
-              <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
+              <h2 className={`mt-2 mb-2 text-[1.3rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Get in touch</h2>
+              <p className="mt-2 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
               <div className="mt-4 flex items-center">
