@@ -65,7 +65,7 @@ export default function Home() {
                 <Image src="/images/davidmanleyzoom.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
               </div>
               <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                Philosopher working on reasoning, emerging technology, and global priorities. Author of <em>Reason Better</em>.
+                Philosopher working on reasoning, emerging technology, and global priorities.
               </p>
             </div>
             <div className="mt-4 dark:hidden">
