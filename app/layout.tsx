@@ -6,7 +6,7 @@ import ThemeToggle from "../components/ThemeToggle";
 import { Instrument_Sans, EB_Garamond } from "next/font/google";
 
 const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument" });
-const garamond = EB_Garamond({ subsets: ["latin"], variable: "--font-garamond", weight: "400" });
+const garamond = EB_Garamond({ subsets: ["latin"], variable: "--font-garamond", weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "David Manley — Professor of Philosophy",
