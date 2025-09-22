@@ -5,6 +5,9 @@ import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
 import VimeoEmbed from "@/components/VimeoEmbed";
+import { EB_Garamond } from "next/font/google";
+
+const titleFont = EB_Garamond({ subsets: ["latin"], weight: ["600"], fallback: ["Georgia", "serif"] });
 
 export default function Home() {
   const copyEmailToClipboard = () => {
@@ -20,7 +23,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl font-semibold leading-tight tracking-tight font-garamond">David Manley</h1>
+              <h1 className={`text-4xl font-semibold leading-tight tracking-tight ${titleFont.className}`}>David Manley</h1>
               <div className="mt-4 flex flex-wrap gap-3">
                 <button onClick={copyEmailToClipboard} className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -55,7 +58,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight font-garamond">David Manley</h1>
+            <h1 className={`text-4xl md:text-5xl font-semibold leading-tight tracking-tight ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
