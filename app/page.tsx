@@ -15,19 +15,15 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
-              <div className="mt-4 flex gap-3">
-                <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
-                   href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
-                  Download CV
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                </a>
-              </div>
-            </div>
-            <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-              <h3 className="font-medium text-lg font-inter">Contact</h3>
-              <div className="mt-4 space-y-3">
+                  <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
+                    Download CV
+                  </a>
+                </div>
                 <div className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -44,14 +40,6 @@ export default function Home() {
                   <a href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer" className="ml-3 text-sm text-slate-700 dark:text-slate-300 hover:underline">
                     Book a meeting
                   </a>
-                </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-                  <div className="ml-3 text-sm text-slate-700 dark:text-slate-300 whitespace-nowrap">
-                    University of Michigan, Ann Arbor
-                  </div>
                 </div>
               </div>
             </div>
