@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">
-              <Link href="/" className="font-bold tracking-tight text-lg hidden md:inline font-garamond">David Manley</Link>
+              {/* Removed site name from header */}
               <div className="flex flex-1 items-center justify-end gap-6">
                 <nav className="flex-1 flex justify-between items-center gap-6 text-base font-semibold text-slate-700 dark:text-slate-300 md:hidden">
                   <Link href="/#talks" className="hover:text-slate-900 dark:hover:text-slate-100">Talks</Link>

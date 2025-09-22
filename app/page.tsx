@@ -70,7 +70,7 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-            <h3 className="font-medium text-lg font-garamond">Contact</h3>
+            <h3 className="font-medium text-lg">Contact</h3>
             <div className="mt-4 space-y-3">
               <div className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-9">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">About</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
             <div className="space-y-2">
               <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                 I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
@@ -167,11 +167,11 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Recent Talks</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
               <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
-                    <h3 className="text-lg font-medium whitespace-pre-line leading-tight tracking-tight font-garamond">{talk.title}</h3>
+                    <h3 className="text-lg font-medium whitespace-pre-line leading-tight tracking-tight">{talk.title}</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
                   </li>
                 ))}
@@ -187,7 +187,7 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Books</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
@@ -229,7 +229,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Papers</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Papers</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
@@ -241,7 +241,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
-                <h3 className="text-lg font-semibold leading-snug tracking-tight font-garamond">{p.title}</h3>
+                <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
@@ -273,13 +273,13 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-garamond">Upcoming Courses</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight font-garamond">Phil 450: Philosophy of Emerging Technology</h3>
+              <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
@@ -291,7 +291,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight font-garamond">Phil 360: Global Priorities</h3>
+              <h3 className="text-lg font-semibold tracking-tight">Phil 360: Global Priorities</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
@@ -303,7 +303,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight font-garamond">Phil 183: Critical Reasoning</h3>
+              <h3 className="text-lg font-semibold tracking-tight">Phil 183: Critical Reasoning</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-semibold font-garamond">Elsewhere</h2>
+              <h2 className="text-xl font-semibold">Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
                 <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
@@ -331,7 +331,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h2 className="text-xl font-semibold font-garamond">Get in touch</h2>
+              <h2 className="text-xl font-semibold">Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
