@@ -12,13 +12,13 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div>
-              <h1 className="text-4xl font-semibold leading-tight tracking-tight">David Manley</h1>
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
               <div className="mt-4 flex gap-3">
-                <Link href="/#research" className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
+                <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200">
                   See publications
-                </Link>
+                </a>
                 <Link href="/#teaching" className="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                   View courses
                 </Link>
@@ -41,7 +41,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">David Manley</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight font-inter">David Manley</h1>
             <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               I work on improving human reasoning, the philosophy of future technology, and global priorities.
             </p>
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-5">
-            <h3 className="font-medium text-lg">Contact</h3>
+            <h3 className="font-medium text-lg font-inter">Contact</h3>
             <div className="mt-4 space-y-3">
               <div className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
@@ -99,16 +99,18 @@ export default function Home() {
             </div>
           </div>
           <div className="md:col-span-9">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-              I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
-            </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-              Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">About</h2>
+            <div className="space-y-2">
+              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                I'm an associate professor of philosophy at the University of Michigan, Ann Arbor. 
               </p>
-            <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-              I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
-            </p>
+              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
+                </p>
+              <p className="mt-4 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
+              </p>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
@@ -142,11 +144,11 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Recent Talks</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Recent Talks</h2>
               <ul className="mt-8 space-y-4">
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
-                    <h3 className="text-lg font-medium whitespace-pre-line tracking-tight">{talk.title}</h3>
+                    <h3 className="text-lg font-medium whitespace-pre-line tracking-tight font-inter">{talk.title}</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
                   </li>
                 ))}
@@ -162,7 +164,7 @@ export default function Home() {
       {/* Books */}
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Books</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Books</h2>
           <div className="mt-10 grid gap-8 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[300px] h-[450px]">
@@ -204,7 +206,7 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Research &amp; Publications</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Papers</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Selected entries;{" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline hover:text-slate-900 dark:hover:text-slate-100">
@@ -216,8 +218,8 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
-                <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
-                <p className="mt-2 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
+                <h3 className="text-lg font-semibold leading-snug tracking-tight font-inter">{p.title}</h3>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
                   <div className="flex justify-between items-end">
@@ -248,13 +250,13 @@ export default function Home() {
       {/* Upcoming Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Upcoming Courses</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-inter">Upcoming Courses</h2>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
+              <h3 className="text-lg font-semibold tracking-tight font-inter">Phil 450: Philosophy of Emerging Technology</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
@@ -266,7 +268,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 360: Global Priorities</h3>
+              <h3 className="text-lg font-semibold tracking-tight font-inter">Phil 360: Global Priorities</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
@@ -278,7 +280,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 183: Critical Reasoning</h3>
+              <h3 className="text-lg font-semibold tracking-tight font-inter">Phil 183: Critical Reasoning</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
@@ -298,15 +300,15 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-semibold">Elsewhere</h2>
+              <h2 className="text-xl font-semibold font-inter">Elsewhere</h2>
               <ul className="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" className="hover:underline">Reason Better</a></li>
+                <li><a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="hover:underline">Reason Better</a></li>
                 <li><a href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" className="hover:underline">Google Scholar</a></li>
                 <li><a href="https://philpeople.org/profiles/david-manley" className="hover:underline">PhilPeople</a></li>
               </ul>
             </div>
             <div>
-              <h2 className="text-xl font-semibold">Get in touch</h2>
+              <h2 className="text-xl font-semibold font-inter">Get in touch</h2>
               <p className="mt-3 text-slate-700 dark:text-slate-300 leading-7">
                 Email is best. For students: please include your course number in the subject line.
               </p>
