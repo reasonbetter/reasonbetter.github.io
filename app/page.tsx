@@ -313,7 +313,7 @@ export default function Home() {
                     {!!p.tags?.length && (
                       <div className="flex flex-wrap gap-2">
                         {p.tags.map((t: string) => (
-                          <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-xs font-medium">{t}</span>
+                          <span key={t} className="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full text-sm font-medium">{t}</span>
                         ))}
                       </div>
                     )}
