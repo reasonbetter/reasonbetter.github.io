@@ -1,10 +1,15 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import Image from "next/image";
 
-export default function LiteVimeo({ id, title, posterSrc, className }: { id: string; title?: string; posterSrc: string; className?: string }) {
+export default function LiteVimeo({ id, title, posterSrc, className }: { id: string; title?: string; posterSrc?: string; className?: string }) {
   const [active, setActive] = useState(false);
   const onPlay = useCallback(() => setActive(true), []);
+
+  // Vimeo static thumbnail pattern (640px). This uses the default poster set on Vimeo.
+  // Note: For fully reliable posters, fetch oEmbed at build-time; this static URL works for most public videos.
+  const vimeoPoster = useMemo(() => `https://vumbnail.com/${id}.jpg`, [id]);
+  const src = posterSrc || vimeoPoster;
 
   return (
     <div className={`relative w-full overflow-hidden rounded-lg border border-slate-200 dark:border-slate-800 ${className || ""}`}>
@@ -25,7 +30,7 @@ export default function LiteVimeo({ id, title, posterSrc, className }: { id: str
             className="group relative block h-full w-full"
           >
             <Image
-              src={posterSrc}
+              src={src}
               alt={title || "Video thumbnail"}
               fill
               sizes="100vw"

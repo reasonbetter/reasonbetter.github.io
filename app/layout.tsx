@@ -3,9 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ThemeToggle from "../components/ThemeToggle";
-import { Roboto } from "next/font/google";
+import { Mulish } from "next/font/google";
 
-const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto", weight: ["400", "500"] });
+const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish", weight: ["400", "500"] });
 
 export const metadata: Metadata = {
   title: "David Manley — Professor of Philosophy",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 ${roboto.variable} ${roboto.className}`}>
+      <body className={`min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 ${mulish.variable} ${mulish.className}`}>
         <header className="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">
