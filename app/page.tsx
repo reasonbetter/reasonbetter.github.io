@@ -156,14 +156,14 @@ export default function Home() {
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
               <a
@@ -174,7 +174,7 @@ export default function Home() {
               >
                 Reason Better
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
             </div>
@@ -251,8 +251,8 @@ export default function Home() {
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid grid-cols-3 gap-1 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="block relative w-full aspect-square md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Reason Better</span>
               </a>
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
@@ -263,8 +263,8 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
-                <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-bottom" />
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="block relative w-full aspect-square md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
+                <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Reference Book</span>
               </a>
               <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
@@ -275,8 +275,8 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
-                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover" />
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="block relative w-full aspect-square md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
+                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Metametaphysics</span>
               </a>
               <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
