@@ -22,8 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex h-14 items-center justify-between">
               {/* Site title removed intentionally */}
-              <div className="flex flex-1 items-center justify-between gap-6">
-                <nav className="flex-1 flex justify-between items-center gap-6 text-base font-semibold text-slate-700 dark:text-slate-300 md:hidden">
+              <div className="flex flex-1 items-center justify-center md:justify-between gap-6">
+                <nav className="flex items-center justify-center gap-6 text-base font-semibold text-slate-700 dark:text-slate-300 md:hidden">
                   <Link href="/#talks" className="hover:text-slate-900 dark:hover:text-slate-100">Talks</Link>
                   <Link href="/#books" className="hover:text-slate-900 dark:hover:text-slate-100">Books</Link>
                   <Link href="/#research" className="hover:text-slate-900 dark:hover:text-slate-100">Papers</Link>
