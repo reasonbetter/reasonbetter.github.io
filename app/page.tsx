@@ -228,7 +228,7 @@ export default function Home() {
                 {talks.map((talk: Talk, idx: number) => (
                   <li key={idx}>
                     <h3 className="text-lg font-semibold leading-tight tracking-tight">{talk.title}</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
+                    <p className="text-[0.95rem] text-slate-600 dark:text-slate-400">{talk.where}, {talk.date}</p>
                   </li>
                 ))}
               </ul>
@@ -303,8 +303,8 @@ export default function Home() {
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
                 <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
-                {p.note && <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">{p.note}</p>}
+                <p className="mt-1 text-[0.95rem] text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
+                {p.note && <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
                   <div className="flex justify-between items-end gap-2">
                     {!!p.tags?.length && (
@@ -341,8 +341,8 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
-              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
+              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
               </p>
               <div className="mt-5">
@@ -353,8 +353,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 360: Global Priorities</h3>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
-              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
+              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
               </p>
               <div className="mt-5">
@@ -365,8 +365,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 183: Critical Reasoning</h3>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Recurring</p>
-              <p className="mt-4 text-sm text-slate-700 dark:text-slate-300">
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
+              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
               </p>
               <div className="mt-5">
