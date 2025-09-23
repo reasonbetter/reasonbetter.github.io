@@ -6,4 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent: #3D5A80;
+  --accent-bg: rgba(61, 90, 128, 0.10);
+}
+.dark {
+  --accent: #9FBCD9;
+  --accent-bg: rgba(159, 188, 217, 0.10);
+}
+
 html { scroll-behavior: smooth; }
