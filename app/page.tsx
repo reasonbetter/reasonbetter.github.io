@@ -34,8 +34,8 @@ export default function Home() {
             </div>
 
             <div className="flex items-stretch gap-4">
-              <div className="relative basis-[38%] max-w-[160px] flex-shrink-0 self-stretch">
-                <Image src="/images/new.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" />
+              <div className="relative w-[38%] max-w-[160px] aspect-[2/3] flex-shrink-0">
+                <Image src="/images/new.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" priority />
               </div>
               <div className="flex-1">
                 <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
@@ -249,7 +249,7 @@ export default function Home() {
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
-          <div className="mt-10 grid grid-cols-3 gap-0 md:gap-2 md:grid-cols-3 text-center">
+          <div className="mt-10 grid grid-cols-3 gap-0.5 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
