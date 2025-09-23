@@ -8,7 +8,7 @@ import VimeoEmbed from "@/components/VimeoEmbed";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 
-const titleFont = Inter({ subsets: ["latin"], weight: ["600"], fallback: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"] });
+const titleFont = Inter({ subsets: ["latin"], weight: ["600", "700"], fallback: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"] });
 
 export default function Home() {
   const [copiedMobile, setCopiedMobile] = useState(false);
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-8">
             <div>
-              <h1 className={`text-4xl font-semibold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
+              <h1 className={`text-4xl font-bold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
               <div className="mt-4 flex flex-wrap gap-3">
                 <button
                   onClick={() => copyEmail(setCopiedMobile)}
@@ -77,7 +77,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className={`text-4xl md:text-5xl font-semibold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
+            <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.01em] ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               <span className="md:whitespace-nowrap">Philosopher working on reasoning, emerging technology, and global priorities.</span>
               <br className="hidden md:block" />
@@ -142,13 +142,13 @@ export default function Home() {
           <div className="md:col-span-9 text-[1.05rem] md:text-[1.07rem]">
             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less font-light">
                 I'm a tenured associate professor of philosophy at the University of Michigan, Ann Arbor. 
               </p>
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less font-light">
                 Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
                 </p>
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less font-light">
                 I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
               </p>
             </div>
