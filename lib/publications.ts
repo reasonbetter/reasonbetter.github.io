@@ -12,7 +12,7 @@ export const publications: Publication[] = [
     title: "The Ethics, Economics, and Demographics of Delaying Aging",
     venue: "in <em>Essays on Longtermism</em>, eds. H. Greaves & W. MacAskill (OUP, 2025)",
     link: "/papers/EEDDA.pdf",
-    tags: ["ethics", "economics", "biotech", "emerging technology"],
+    tags: ["bioethics", "economics", "emerging technology"],
     note: "Delaying aging will yield enormous social benefits and is under-resourced.",
   },
   {
@@ -33,7 +33,7 @@ export const publications: Publication[] = [
     title: "God and the Bayesian Conception of Evidence",
     venue: "forthcoming in <em>Religious Studies</em>",
     link: "/papers/God+and+the+Bayesian+conception.pdf",
-    tags: ["bayesianism", "metaphilosophy", "philosophy of religion"],
+    tags: ["bayesianism", "evidentialism", "phil of religion"],
     note: "Cognitive pitfalls are pervasive when assessing evidential arguments about the existence of God.",
   },
   {
@@ -68,14 +68,14 @@ export const publications: Publication[] = [
     title: "Dispositions, Conditionals, and Counterexamples",
     venue: "<em>Mind</em>, 120: 1191–1227",
     link: "/papers/fzn003.pdf",
-    tags: ["metaphysics", "philosophy of language","dispositions"],
+    tags: ["metaphysics", "semantics","dispositions"],
     note: "Defends our account of dispositions; considers the nature of conditionals and centering. (Co-authored with Ryan Wasserman)",
   },
   {
     title: "When Best Theories Go Bad",
     venue: "<em>Philosophy and Phenomenological Research</em>, 78(2): 392–405",
     link: "/papers/when+best+theories+fixed.pdf",
-    tags: ["metaontology", "metaphilosophy", "philosophy of language"],
+    tags: ["metaontology", "metaphilosophy", "semantics"],
     note: "Sometimes even realists should repudiate the ontological commitments of our best theories.",
   },
   {
@@ -89,7 +89,7 @@ export const publications: Publication[] = [
     title: "On Linking Dispositions With Conditionals",
     venue: "<em>Mind</em>, 117: 59–84",
     link: "/papers/On+Linking+Dispositions.pdf",
-    tags: ["metaphysics", "philosophy of language", "dispositions"],
+    tags: ["metaphysics", "semantics", "dispositions"],
     note: "Raises new problems for conditional accounts of dispositions; offers a new account that solves them. (Co-authored with Ryan Wasserman)",
   },
   {
@@ -103,7 +103,7 @@ export const publications: Publication[] = [
     title: "A Gradable Approach to Dispositions",
     venue: "<em>The Philosophical Quarterly</em>, 57: 68–75",
     link: "/papers/gad+published.pdf",
-    tags: ["metaphysics", "philosophy of language", "dispositions"],
+    tags: ["metaphysics", "semantics", "dispositions"],
     note: "Accounts for degrees of dispositions while avoiding the problems of finks and masks. (Co-authored with Ryan Wasserman) ",
   },
 ];
