@@ -251,9 +251,10 @@ export default function Home() {
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid grid-cols-3 gap-1 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
-              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
-              </div>
+                <span className="sr-only">Open Reason Better</span>
+              </a>
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Try the text
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -262,9 +263,10 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
                 <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-bottom" />
-              </div>
+                <span className="sr-only">Open Reference Book</span>
+              </a>
               <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -273,9 +275,10 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto rounded-lg overflow-hidden">
                 <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover" />
-              </div>
+                <span className="sr-only">Open Metametaphysics</span>
+              </a>
               <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
