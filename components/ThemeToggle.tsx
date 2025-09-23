@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Toggle theme"
-      className="rounded-md border px-2 py-1 text-sm"
+      className="rounded-md border px-2 py-1 text-[1.05rem] md:text-[0.95rem] font-medium"
       onClick={() => {
         const next = !dark;
         document.documentElement.classList.toggle("dark", next);
