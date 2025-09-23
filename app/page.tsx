@@ -5,10 +5,10 @@ import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
 import VimeoEmbed from "@/components/VimeoEmbed";
-import { Instrument_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import { useState } from "react";
 
-const titleFont = Instrument_Sans({ subsets: ["latin"], fallback: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"] });
+const titleFont = Inter({ subsets: ["latin"], weight: ["600"], fallback: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"] });
 
 export default function Home() {
   const [copiedMobile, setCopiedMobile] = useState(false);
@@ -69,7 +69,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-4 dark:hidden">
-              <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={400} height={100} />
+              <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={320} height={80} />
             </div>
           </div>
         </div>
