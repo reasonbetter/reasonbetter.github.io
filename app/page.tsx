@@ -34,8 +34,8 @@ export default function Home() {
             </div>
 
             <div className="flex items-stretch gap-4">
-              <div className="basis-[38%] max-w-[160px] flex-shrink-0 self-stretch">
-                <Image src="/images/new.jpeg" alt="David Manley" width={160} height={240} className="rounded-lg w-full h-auto object-cover shadow-sm" />
+              <div className="relative basis-[38%] max-w-[160px] flex-shrink-0 self-stretch">
+                <Image src="/images/new.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" />
               </div>
               <div className="flex-1">
                 <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
@@ -85,7 +85,7 @@ export default function Home() {
               <br className="hidden md:block" />
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
-              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
+              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -94,7 +94,7 @@ export default function Home() {
               </a>
               <button
                 onClick={() => copyEmail(setCopiedDesktop)}
-                className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
+                className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
               >
                 {copiedDesktop ? (
                   <>
@@ -113,7 +113,7 @@ export default function Home() {
                   </>
                 )}
               </button>
-              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
+              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
                  href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -249,36 +249,36 @@ export default function Home() {
       <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
-          <div className="mt-10 grid grid-cols-3 gap-1 md:gap-2 md:grid-cols-3 text-center">
+          <div className="mt-10 grid grid-cols-3 gap-0 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
-              <div className="relative w-[100px] h-[150px] md:w-[300px] md:h-[450px]">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" layout="fill" objectFit="cover" className="object-left" />
+              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
               </div>
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Try the text
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <div className="relative w-[100px] h-[150px] md:w-[300px] md:h-[450px]">
-                <Image src="/images/reference-book.jpg" alt="Reference book cover" layout="fill" objectFit="cover" className="object-bottom" />
+              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+                <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-bottom" />
               </div>
               <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <div className="relative w-[100px] h-[150px] md:w-[300px] md:h-[450px]">
-                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" layout="fill" objectFit="cover" />
+              <div className="relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto">
+                <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover" />
               </div>
               <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
                 Get the book
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
