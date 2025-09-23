@@ -78,38 +78,65 @@ export default function Home() {
 
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
-          <div>
+          <div className="flex-1">
             <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.035em] ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               <span className="md:whitespace-nowrap">Philosopher working on reasoning, emerging technology, and global priorities.</span>
               <br className="hidden md:block" />
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
-              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
-                Download CV
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
+                Download CV
+              </a>
+              <button
+                onClick={() => copyEmail(setCopiedDesktop)}
+                className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
+              >
+                {copiedDesktop ? (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                    </svg>
+                    Copied
+                  </>
+                ) : (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    Copy address
+                  </>
+                )}
+              </button>
+              <a className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-slate-800"
+                 href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                </svg>
+                Book a meeting
               </a>
             </div>
           </div>
-          {/* Removed desktop contact card */}
         </div>
       </section>
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
-          {/* Left image (bigger on desktop) */}
-          <div className="hidden md:block md:col-span-4 pt-0">
+          {/* Left image larger */}
+          <div className="hidden md:block md:col-span-5 pt-0">
             <div className="relative h-full">
               <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-contain" />
             </div>
           </div>
 
-          {/* Middle text */}
-          <div className="md:col-span-5 text-[1.05rem] md:text-[1.07rem]">
+          {/* Right content: text + external buttons */}
+          <div className="md:col-span-7 text-[1.05rem] md:text-[1.07rem]">
             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
@@ -123,7 +150,36 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Existing buttons, mobile only now */}
+            {/* External buttons under text (desktop) */}
+            <div className="mt-8 hidden md:flex flex-wrap gap-3">
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+                 href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
+                Google Scholar
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+                 href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
+                PhilPeople
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <a
+                href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              >
+                Reason Better
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Existing buttons for mobile stay as before */}
             <div className="mt-8 flex flex-wrap gap-3 md:hidden">
               <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
@@ -158,63 +214,6 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-          </div>
-
-          {/* Right column buttons (desktop only) */}
-          <div className="hidden md:flex md:col-span-3 flex-col gap-2">
-            <button
-              onClick={() => copyEmail(setCopiedAbout)}
-              className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm ${copiedAbout ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
-            >
-              {copiedAbout ? (
-                <>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                  </svg>
-                  Copied
-                </>
-              ) : (
-                <>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  Copy address
-                </>
-              )}
-            </button>
-            <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
-              href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-              </svg>
-              Book a meeting
-            </a>
-            <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-               href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
-              Google Scholar
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-            <a className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-               href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
-              PhilPeople
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-            <a
-              href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-between rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
-            >
-              Reason Better
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
           </div>
         </div>
       </section>
