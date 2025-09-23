@@ -29,21 +29,21 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-6">
             <div>
-              <h1 className={`text-4xl font-bold leading-tight tracking-[-0.03em] ${titleFont.className}`}>David Manley</h1>
+              <h1 className={`text-4xl font-bold leading-tight tracking-[-0.035em] ${titleFont.className}`}>David Manley</h1>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="w-[38%] max-w-[160px] flex-shrink-0">
-                <Image src="/images/tall.jpeg" alt="David Manley" width={160} height={240} className="rounded-lg w-full h-auto shadow-sm" />
+            <div className="flex items-stretch gap-4">
+              <div className="relative basis-[38%] max-w-[160px] flex-shrink-0 self-stretch">
+                <Image src="/images/tall.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" />
               </div>
               <div className="flex-1">
                 <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
                   Philosopher working on reasoning, emerging technology, and global priorities.
                 </p>
-                <div className="mt-3 flex flex-col gap-2">
+                <div className="mt-3 flex flex-col gap-2 items-start">
                   <button
                     onClick={() => copyEmail(setCopiedMobile)}
-                    className={`inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 w-[180px] ${copiedMobile ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
+                    className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 ${copiedMobile ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
                   >
                     {copiedMobile ? (
                       <>
@@ -62,7 +62,7 @@ export default function Home() {
                       </>
                     )}
                   </button>
-                  <a className="inline-flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm w-[180px]"
+                  <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
                     href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="dark:hidden">
+            <div className="dark:hidden flex justify-center">
               <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={320} height={80} />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.03em] ${titleFont.className}`}>David Manley</h1>
+            <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.035em] ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               <span className="md:whitespace-nowrap">Philosopher working on reasoning, emerging technology, and global priorities.</span>
               <br className="hidden md:block" />

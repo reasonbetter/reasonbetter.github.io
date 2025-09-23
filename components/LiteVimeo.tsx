@@ -38,8 +38,8 @@ export default function LiteVimeo({ id, title, posterSrc, className }: { id: str
               priority={false}
             />
             <span className="absolute inset-0 bg-black/20 group-hover:bg-black/25 transition-colors" />
-            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center rounded-full bg-white/95 text-slate-900 shadow-md group-hover:scale-105 transition-transform" style={{ width: 56, height: 56 }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+            <span className="absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center rounded-full bg-white/95 text-slate-900 shadow-md group-hover:scale-105 transition-transform" style={{ width: 48, height: 48 }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M8 5v14l11-7z" />
               </svg>
             </span>
