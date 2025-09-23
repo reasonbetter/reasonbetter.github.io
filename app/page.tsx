@@ -252,7 +252,7 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-3 gap-1 md:gap-2 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="block relative w-full aspect-[2/3] md:w-[300px] md:h-[450px] md:aspect-auto overflow-hidden">
-                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-center" />
+                <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
                 <span className="sr-only">Open Reason Better</span>
               </a>
               <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900">
