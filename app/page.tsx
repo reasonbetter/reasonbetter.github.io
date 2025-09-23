@@ -85,7 +85,7 @@ export default function Home() {
               <br className="hidden md:block" />
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
-              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 shadow-sm"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -94,7 +94,7 @@ export default function Home() {
               </a>
               <button
                 onClick={() => copyEmail(setCopiedDesktop)}
-                className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+                className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 shadow-sm"
               >
                 {copiedDesktop ? (
                   <>
@@ -113,7 +113,7 @@ export default function Home() {
                   </>
                 )}
               </button>
-              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+              <a className="inline-flex items-center rounded-md bg-white text-slate-900 border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 shadow-sm"
                  href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
+      <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           {/* Left image larger */}
           <div className="hidden md:block md:col-span-5 pt-0">
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* Books */}
-      <section id="books" className="scroll-mt-24 border-b border-slate-200 dark-border-slate-800">
+      <section id="books" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Books</h2>
           <div className="mt-10 grid grid-cols-3 gap-1 md:gap-2 md:grid-cols-3 text-center">
