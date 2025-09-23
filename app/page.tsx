@@ -29,7 +29,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
           <div className="space-y-6">
             <div>
-              <h1 className={`text-4xl font-bold leading-tight tracking-[-0.02em] ${titleFont.className}`}>David Manley</h1>
+              <h1 className={`text-4xl font-bold leading-tight tracking-[-0.03em] ${titleFont.className}`}>David Manley</h1>
             </div>
 
             <div className="flex items-start gap-4">
@@ -82,7 +82,7 @@ export default function Home() {
         {/* Desktop Hero */}
         <div className="mx-auto max-w-5xl px-4 py-16 hidden md:flex items-center justify-between gap-8">
           <div>
-            <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.02em] ${titleFont.className}`}>David Manley</h1>
+            <h1 className={`text-4xl md:text-5xl font-bold leading-tight tracking-[-0.03em] ${titleFont.className}`}>David Manley</h1>
             <p className="mt-3 max-w-xl text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
               <span className="md:whitespace-nowrap">Philosopher working on reasoning, emerging technology, and global priorities.</span>
               <br className="hidden md:block" />
