@@ -304,7 +304,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {publications.map((p: Publication, idx: number) => (
-              <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
+              <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-5 md:p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
                 <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
                 <p className="mt-1 text-[0.95rem] text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
                 {p.note && <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">{p.note}</p>}
