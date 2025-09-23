@@ -5,10 +5,10 @@ import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
 import VimeoEmbed from "@/components/VimeoEmbed";
-import { EB_Garamond } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import { useState } from "react";
 
-const titleFont = EB_Garamond({ subsets: ["latin"], weight: ["600"], fallback: ["Georgia", "serif"] });
+const titleFont = Instrument_Sans({ subsets: ["latin"], fallback: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"] });
 
 export default function Home() {
   const [copiedMobile, setCopiedMobile] = useState(false);
