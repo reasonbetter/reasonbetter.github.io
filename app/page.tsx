@@ -27,49 +27,53 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
               <h1 className={`text-4xl font-bold leading-tight tracking-[-0.02em] ${titleFont.className}`}>David Manley</h1>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <button
-                  onClick={() => copyEmail(setCopiedMobile)}
-                  className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 ${copiedMobile ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
-                >
-                  {copiedMobile ? (
-                    <>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                      </svg>
-                      Copied
-                    </>
-                  ) : (
-                    <>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
-                      Copy email
-                    </>
-                  )}
-                </button>
-                <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
-                   href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                  </svg>
-                  Book a meeting
-                </a>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-[38%] max-w-[160px] flex-shrink-0">
+                <Image src="/images/tall.jpg" alt="David Manley" width={160} height={240} className="rounded-lg w-full h-auto shadow-sm" />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-col gap-2">
+                  <button
+                    onClick={() => copyEmail(setCopiedMobile)}
+                    className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 ${copiedMobile ? 'text-green-700 dark:text-green-400 border-green-300 dark:border-green-700' : 'border-slate-200 dark:border-slate-800'}`}
+                  >
+                    {copiedMobile ? (
+                      <>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg>
+                        Copied
+                      </>
+                    ) : (
+                      <>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        Copy email
+                      </>
+                    )}
+                  </button>
+                  <a className="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm"
+                    href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                    </svg>
+                    Book a meeting
+                  </a>
+                </div>
+                <p className="mt-3 text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                  Philosopher working on reasoning, emerging technology, and global priorities.
+                </p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="w-1/2 max-w-[150px] flex-shrink-0">
-                <Image src="/images/davidmanleyzoom.png" alt="David Manley" width={150} height={150} className="rounded-lg w-full h-auto shadow-sm" />
-              </div>
-              <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                Philosopher working on reasoning, emerging technology, and global priorities.
-              </p>
-            </div>
-            <div className="mt-4 dark:hidden">
+
+            <div className="dark:hidden">
               <Image src="/images/lsa-philosophy.jpg" alt="LSA Philosophy Department Logo" width={320} height={80} />
             </div>
           </div>
