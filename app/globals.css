@@ -11,8 +11,8 @@
   --accent-bg: rgba(61, 90, 128, 0.10);
 }
 .dark {
-  --accent: #9FBCD9;
-  --accent-bg: rgba(159, 188, 217, 0.10);
+  --accent: #8BA0B5;
+  --accent-bg: rgba(139, 160, 181, 0.10);
 }
 
 html { scroll-behavior: smooth; }
