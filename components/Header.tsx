@@ -2,6 +2,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { Inter } from "next/font/google";
+
+const interBold = Inter({ subsets: ["latin"], weight: ["700"] });
 
 export default function Header() {
   const [showBrand, setShowBrand] = useState(false);
@@ -12,17 +15,47 @@ export default function Header() {
   // Observe the hero H1 to decide when to show the compact brand in the header
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const el = document.getElementById("hero-title");
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setShowBrand(!entry.isIntersecting);
-      },
-      { root: null, threshold: 0.01 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
+
+    let observer: IntersectionObserver | null = null;
+    let target: HTMLElement | null = null;
+
+    const pickTarget = () => {
+      const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+      const id = isDesktop ? "hero-title-desktop" : "hero-title-mobile";
+      return document.getElementById(id);
+    };
+
+    const observe = () => {
+      const el = pickTarget();
+      if (!el) return;
+      target = el;
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          setShowBrand(!entry.isIntersecting);
+        },
+        { root: null, threshold: 0.01 }
+      );
+      observer.observe(el);
+    };
+
+    observe();
+
+    const onResize = () => {
+      const newTarget = pickTarget();
+      if (newTarget !== target) {
+        if (observer && target) observer.unobserve(target);
+        if (observer) observer.disconnect();
+        observer = null;
+        target = null;
+        observe();
+      }
+    };
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      if (observer) observer.disconnect();
+    };
   }, []);
 
   // Hide on scroll down / show on scroll up (mobile only)
@@ -57,7 +90,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/#top"
-              className={`truncate transition-opacity duration-200 ${showBrand ? "opacity-100" : "opacity-0"} pointer-events-${showBrand ? "auto" : "none"} text-slate-900 dark:text-slate-100 font-semibold md:font-bold`}
+              className={`${interBold.className} truncate transition-opacity duration-200 ${showBrand ? "opacity-100" : "opacity-0"} pointer-events-${showBrand ? "auto" : "none"} text-slate-900 dark:text-slate-100 font-bold`}
             >
               David Manley
             </Link>
