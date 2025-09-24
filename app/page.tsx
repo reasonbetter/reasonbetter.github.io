@@ -140,7 +140,7 @@ export default function Home() {
              <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
              <div className="space-y-2">
                <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                 I'm a tenured Associate Professor at the University of Michigan, Ann Arbor. I teach at the graduate and undergraduate levels in a wide range of areas in philosophy.
+                 I'm a tenured associate professor in the philosophy department at the University of Michigan, Ann Arbor. 
                </p>
                <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
                  Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
