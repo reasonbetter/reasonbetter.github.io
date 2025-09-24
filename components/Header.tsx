@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/#top"
-              className={`${interBold.className} truncate transition-opacity duration-200 ${showBrand ? "opacity-100" : "opacity-0"} pointer-events-${showBrand ? "auto" : "none"} text-slate-900 dark:text-slate-100 font-bold`}
+              className={`${interBold.className} truncate transition-opacity duration-500 ease-out ${showBrand ? "opacity-100" : "opacity-0"} pointer-events-${showBrand ? "auto" : "none"} text-slate-900 dark:text-slate-100 font-bold`}
             >
               David Manley
             </Link>
@@ -131,6 +131,7 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
           <div className="mx-auto max-w-6xl px-4 py-3 flex gap-6 justify-end text-[1.05rem] font-medium text-black dark:text-slate-100">
+            <Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link>
             <Link href="/#talks" onClick={() => setMenuOpen(false)}>Talks</Link>
             <Link href="/#books" onClick={() => setMenuOpen(false)}>Books</Link>
             <Link href="/#research" onClick={() => setMenuOpen(false)}>Papers</Link>
