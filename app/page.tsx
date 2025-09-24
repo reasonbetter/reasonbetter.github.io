@@ -127,11 +127,11 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
-        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-6">
           {/* Left image larger */}
           <div className="hidden md:block md:col-span-5 pt-0">
             <div className="relative h-full">
-              <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-contain" />
+              <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-cover object-left" />
             </div>
           </div>
 
