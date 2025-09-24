@@ -293,11 +293,11 @@ export default function Home() {
       {/* Research & Publications — card layout */}
       <section id="research" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Papers</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Selected Papers</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
-            Selected entries;{" "}
+            {" "}
             <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline text-[var(--accent)] hover:opacity-80">
-              see the CV
+              See the CV
             </a>{" "}
             for a full list.
           </p>
