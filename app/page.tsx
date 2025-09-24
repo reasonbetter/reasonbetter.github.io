@@ -127,28 +127,28 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
-        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-6">
-          {/* Left image larger */}
-          <div className="hidden md:block md:col-span-6 pt-0">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-2">
+           {/* Left image larger */}
+           <div className="hidden md:block md:col-span-6 pt-0">
             <div className="relative h-full rounded-lg overflow-hidden">
               <Image src="/images/davidmanley.png" alt="David Manley" fill className="object-contain object-left" />
-            </div>
-          </div>
+             </div>
+           </div>
 
-          {/* Right content: text + external buttons */}
-          <div className="md:col-span-6 text-[1.05rem] md:text-[1.07rem] md:-ml-6 md:pr-6">
-            <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
-            <div className="space-y-2">
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                I'm a tenured associate professor of philosophy at the University of Michigan, Ann Arbor. 
-              </p>
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
+           {/* Right content: text + external buttons */}
+           <div className="md:col-span-6 text-[1.05rem] md:text-[1.07rem]">
+             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
+             <div className="space-y-2">
+               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                 I'm a tenured associate professor of philosophy at the University of Michigan, Ann Arbor. 
+               </p>
+               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                 Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
                 </p>
-              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
-              </p>
-            </div>
+               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                 I also promote rethinking the philosophical curriculum. I'm the author of <em>Reason Better</em>, a new kind of critical thinking textbook.
+               </p>
+             </div>
 
             {/* External buttons under text (desktop) */}
             <div className="mt-8 hidden md:flex flex-wrap gap-3">
@@ -336,7 +336,7 @@ export default function Home() {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                           />
                         </svg>
                       </a>
