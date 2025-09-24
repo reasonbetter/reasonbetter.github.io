@@ -85,7 +85,7 @@ export default function Home() {
               <br className="hidden md:block" />
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
-              <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-100 dark:text-[var(--accent)] dark:hover:bg-slate-200 shadow-sm"
+              <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-900 shadow-sm"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -94,8 +94,8 @@ export default function Home() {
               </a>
               <button
                 onClick={() => copyEmail(setCopiedDesktop)}
-                className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-100 dark:text-[var(--accent)] dark:hover:bg-slate-200 shadow-sm"
-               >
+                className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-900 shadow-sm"
+              >
                 {copiedDesktop ? (
                   <>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
@@ -113,7 +113,7 @@ export default function Home() {
                   </>
                 )}
               </button>
-              <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-100 dark:text-[var(--accent)] dark:hover:bg-slate-200 shadow-sm"
+              <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-900 shadow-sm"
                  href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -152,17 +152,17 @@ export default function Home() {
 
             {/* External buttons under text (desktop) */}
             <div className="mt-8 hidden md:flex flex-wrap gap-3">
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
                  href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -170,10 +170,10 @@ export default function Home() {
                 href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+                className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
               >
                 Reason Better
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -181,24 +181,24 @@ export default function Home() {
 
             {/* Existing buttons for mobile stay as before */}
             <div className="mt-8 flex flex-wrap gap-3 md:hidden">
-              <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 Download CV
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
                  href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -206,10 +206,10 @@ export default function Home() {
                 href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium"
+                className="inline-flex items-center justify-between rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700"
               >
                 Reason Better
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -255,9 +255,9 @@ export default function Home() {
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
                 <span className="sr-only">Open Reason Better</span>
               </a>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700">
                 Try the text
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -267,9 +267,9 @@ export default function Home() {
                 <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Reference Book</span>
               </a>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700">
                 Get the book
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -279,9 +279,9 @@ export default function Home() {
                 <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Metametaphysics</span>
               </a>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 shadow-sm text-[var(--accent)] dark:text-[var(--accent)] dark:border-slate-700">
                 Get the book
-                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
@@ -306,7 +306,7 @@ export default function Home() {
             {publications.map((p: Publication, idx: number) => (
               <article key={idx} className="rounded-lg border border-slate-200 dark:border-slate-800 p-5 md:p-6 shadow-sm transition-shadow hover:shadow-md flex flex-col">
                 <h3 className="text-lg font-semibold leading-snug tracking-tight">{p.title}</h3>
-                <p className="mt-1 text-[0.95rem] text-slate-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: p.venue || "" }} />
+                <p className="mt-1 text-[0.95rem] text-slate-600 dark:text-slate-400" dangerously
                 {p.note && <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">{p.note}</p>}
                 <div className="mt-auto pt-4">
                   <div className="flex justify-between items-end gap-2">
