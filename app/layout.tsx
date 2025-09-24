@@ -23,11 +23,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {/* Site title removed intentionally */}
               <div className="flex flex-1 items-center justify-end gap-6">
                 {/* Mobile nav (right-aligned) */}
-                <nav className="flex items-center justify-end gap-4 text-[1.05rem] font-medium text-black md:hidden">
-                  <Link href="/#talks" className="hover:text-black">Talks</Link>
-                  <Link href="/#books" className="hover:text-black">Books</Link>
-                  <Link href="/#research" className="hover:text-black">Papers</Link>
-                  <Link href="/#teaching" className="hover:text-black">Courses</Link>
+                <nav className="flex items-center justify-end gap-4 text-[1.05rem] font-medium text-black dark:text-slate-100 md:hidden">
+                  <Link href="/#talks" className="hover:text-black dark:hover:text-slate-100">Talks</Link>
+                  <Link href="/#books" className="hover:text-black dark:hover:text-slate-100">Books</Link>
+                  <Link href="/#research" className="hover:text-black dark:hover:text-slate-100">Papers</Link>
+                  <Link href="/#teaching" className="hover:text-black dark:hover:text-slate-100">Courses</Link>
                 </nav>
 
                 {/* Desktop right nav */}
