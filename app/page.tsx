@@ -146,7 +146,7 @@ export default function Home() {
                  Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
                 </p>
                <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                 I also promote rethinking the philosophical curriculum. To that end, I’ve created several new courses at UM (described below), as well as a critical thinking textbook called <em>Reason Better</em>. Instructors can request free access at the link below.
+                 I advocate completely rethinking the standard undergraduate philosophical curriculum. To that end, I’ve created several new courses at UM (described below), as well as a critical thinking textbook called <em>Reason Better</em>. Instructors can request free access at the link below.
                </p>
              </div>
 
