@@ -129,14 +129,14 @@ export default function Home() {
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           {/* Left image larger */}
-          <div className="hidden md:block md:col-span-6 pt-0">
+          <div className="hidden md:block md:col-span-5 pt-0">
             <div className="relative h-full">
               <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-contain" />
             </div>
           </div>
 
           {/* Right content: text + external buttons */}
-          <div className="md:col-span-6 text-[1.05rem] md:text-[1.07rem]">
+          <div className="md:col-span-7 text-[1.05rem] md:text-[1.07rem]">
             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
