@@ -88,7 +88,7 @@ export default function Home() {
               <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-800 shadow-sm"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 003 3h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
                 Open CV
               </a>
@@ -127,11 +127,11 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
-        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-6">
           {/* Left image larger */}
           <div className="hidden md:block md:col-span-6 pt-0">
             <div className="relative h-full">
-              <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-contain" />
+              <Image src="/images/davidmanley.png" alt="David Manley" fill className="rounded-lg object-contain object-left" />
             </div>
           </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
