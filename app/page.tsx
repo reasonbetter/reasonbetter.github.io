@@ -152,14 +152,14 @@ export default function Home() {
 
             {/* External buttons under text (desktop) */}
             <div className="mt-8 hidden md:flex flex-wrap gap-3">
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
                  href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -170,7 +170,7 @@ export default function Home() {
                 href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+                className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
               >
                 Reason Better
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -181,21 +181,21 @@ export default function Home() {
 
             {/* Existing buttons for mobile stay as before */}
             <div className="mt-8 flex flex-wrap gap-3 md:hidden">
-              <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+              <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
                  href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
                  href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+              <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
                  href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -206,7 +206,7 @@ export default function Home() {
                 href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
+                className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
               >
                 Reason Better
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -255,7 +255,7 @@ export default function Home() {
                 <Image src="/images/reason-better-cover.jpg" alt="Reason Better book cover" fill className="object-cover object-left" />
                 <span className="sr-only">Open Reason Better</span>
               </a>
-              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
+              <a href="https://tophat.com/catalog/humanities/philosophy/full-course/reason-better-an-interdisciplinary-guide-to-critical-thinking-david-manley/3425/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
                 Try the text
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -267,7 +267,7 @@ export default function Home() {
                 <Image src="/images/reference-book.jpg" alt="Reference book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Reference Book</span>
               </a>
-              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
+              <a href="https://www.amazon.com/Reference-Book-John-Hawthorne/dp/019870304X/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -279,7 +279,7 @@ export default function Home() {
                 <Image src="/images/metametaphysics cover.png" alt="Metametaphysics book cover" fill className="object-cover object-center" />
                 <span className="sr-only">Open Metametaphysics</span>
               </a>
-              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
+              <a href="https://www.amazon.com/Metametaphysics-New-Essays-Foundations-Ontology/dp/0199546002/" target="_blank" rel="noreferrer" className="mt-2 md:mt-4 inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 bg-white px-2 py-1 text-xs md:text-sm md:px-4 md:py-2 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm text-[var(--accent)] dark:text-[var(--accent)]">
                 Get the book
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:inline h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
