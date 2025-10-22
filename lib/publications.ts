@@ -39,7 +39,7 @@ export const publications: Publication[] = [
   {
     title: "Quantifier Variance",
     venue: "in <em>The Routledge Handbook of Metametaphysics</em>, eds. R. Bliss & J.T.M Miller",
-    link: "/papers/5D8AE1DE-E286-11EC-BE8A-F62EAAC88004.pdf",
+    link: "/papers/Quantifier+Variance.pdf",
     tags: ["metaontology", "semantics"],
     note: "An overview and limited defense of quantifier variance. (Co-authored with Rohan Sud)",
   },
