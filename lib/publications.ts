@@ -88,7 +88,7 @@ export const publications: Publication[] = [
   {
     title: "On Linking Dispositions With Conditionals",
     venue: "<em>Mind</em>, 117: 59–84",
-    link: "/papers/DCC.pdf",
+    link: "/papers/On+Linking+Dispositions.pdf",
     tags: ["metaphysics", "semantics"],
     note: "Raises new problems for conditional accounts of dispositions; offers a new account that solves them. (Co-authored with Ryan Wasserman)",
   },
