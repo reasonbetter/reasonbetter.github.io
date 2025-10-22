@@ -67,7 +67,7 @@ export const publications: Publication[] = [
   {
     title: "Dispositions, Conditionals, and Counterexamples",
     venue: "<em>Mind</em>, 120: 1191–1227",
-    link: "/papers/fzn003.pdf",
+    link: "/papers/DCC.pdf",
     tags: ["metaphysics", "semantics"],
     note: "Defends our account of dispositions; considers the nature of conditionals and centering. (Co-authored with Ryan Wasserman)",
   },
@@ -88,7 +88,7 @@ export const publications: Publication[] = [
   {
     title: "On Linking Dispositions With Conditionals",
     venue: "<em>Mind</em>, 117: 59–84",
-    link: "/papers/On+Linking+Dispositions.pdf",
+    link: "/papers/DCC.pdf",
     tags: ["metaphysics", "semantics"],
     note: "Raises new problems for conditional accounts of dispositions; offers a new account that solves them. (Co-authored with Ryan Wasserman)",
   },
