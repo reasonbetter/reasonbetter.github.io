@@ -17,7 +17,7 @@ export default function Home() {
   const [copiedAbout, setCopiedAbout] = useState(false);
 
   const copyEmail = async (setCopied: (v: boolean) => void) => {
-    try { await navigator.clipboard.writeText("dmanley@umich.edu"); } catch {}
+    try { await navigator.clipboard.writeText("dmanley@umich.edu"); } catch { }
     setCopied(true);
     setTimeout(() => setCopied(false), 10000);
   };
@@ -86,7 +86,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
               <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-800 shadow-sm"
-                 href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer">
+                href="/cv/Manley%20CV.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 003 3h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -114,7 +114,7 @@ export default function Home() {
                 )}
               </button>
               <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-800 shadow-sm"
-                 href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
+                href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                 </svg>
@@ -128,39 +128,39 @@ export default function Home() {
       {/* About */}
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
-           {/* Left image larger */}
-           <div className="hidden md:block md:col-span-4 pt-0">
+          {/* Left image larger */}
+          <div className="hidden md:block md:col-span-4 pt-0">
             <div className="relative h-full overflow-hidden">
               <Image src="/images/davidmanley.jpeg" alt="David Manley" fill className="object-contain object-left" />
-             </div>
-           </div>
+            </div>
+          </div>
 
-           {/* Right content: text + external buttons */}
-           <div className="md:col-span-8 text-[1.05rem] md:text-[1.07rem]">
-             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
-             <div className="space-y-2">
-               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                 I'm a tenured associate professor in the philosophy department at the University of Michigan, Ann Arbor. 
-               </p>
-               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                 Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
-                </p>
-               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                 I advocate completely rethinking the standard undergraduate philosophical curriculum. To that end, I’ve created several new courses at UM (described below), as well as a critical thinking textbook called <em>Reason Better</em>. Instructors can request free access at the link below.
-               </p>
-             </div>
+          {/* Right content: text + external buttons */}
+          <div className="md:col-span-8 text-[1.05rem] md:text-[1.07rem]">
+            <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
+            <div className="space-y-2">
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                I'm a tenured associate professor in the philosophy department at the University of Michigan, Ann Arbor.
+              </p>
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                Much of my past research was about semantics, ontology, and probability. I now work on philosophical issues connected to rationality, emerging technology, and global priorities.
+              </p>
+              <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                I advocate completely rethinking the standard undergraduate philosophical curriculum. To that end, I’ve created several new courses at UM (described below), as well as a critical thinking textbook called <em>Reason Better</em>. Instructors can request free access at the link below.
+              </p>
+            </div>
 
             {/* External buttons under text (desktop) */}
             <div className="mt-8 hidden md:flex flex-wrap gap-3">
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
+                href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
+                href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -182,21 +182,21 @@ export default function Home() {
             {/* Existing buttons for mobile stay as before */}
             <div className="mt-8 flex flex-wrap gap-3 md:hidden">
               <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer">
+                href="/cv/Manley%20CV.pdf" target="_blank" rel="noreferrer">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
+                href="https://scholar.google.com/citations?user=M6rlA-YAAAAJ&hl=en" target="_blank" rel="noreferrer">
                 Google Scholar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               <a className="inline-flex items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
+                href="https://philpeople.org/profiles/david-manley" target="_blank" rel="noreferrer">
                 PhilPeople
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -296,7 +296,7 @@ export default function Home() {
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Selected Papers</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             {" "}
-            <a href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer" className="underline text-[var(--accent)] hover:opacity-80">
+            <a href="/cv/Manley%20CV.pdf" target="_blank" rel="noreferrer" className="underline text-[var(--accent)] hover:opacity-80">
               See the CV
             </a>{" "}
             for a full list.
