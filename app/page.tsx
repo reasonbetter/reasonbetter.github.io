@@ -86,7 +86,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3 items-center">
               <a className="inline-flex items-center rounded-md bg-white text-[var(--accent)] border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium hover:bg-slate-50 dark:bg-slate-900 dark:text-[var(--accent)] dark:hover:bg-slate-800 shadow-sm"
-                 href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
+                 href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 003 3h10a2 2 0 003-3v-1M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -182,7 +182,7 @@ export default function Home() {
             {/* Existing buttons for mobile stay as before */}
             <div className="mt-8 flex flex-wrap gap-3 md:hidden">
               <a className="inline-flex md:hidden items-center justify-between rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm font-medium text-[var(--accent)] dark:text-[var(--accent)]"
-                 href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer">
+                 href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -296,7 +296,7 @@ export default function Home() {
           <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Selected Papers</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             {" "}
-            <a href="/cv/david-manley-cv.pdf" target="_blank" rel="noreferrer" className="underline text-[var(--accent)] hover:opacity-80">
+            <a href="/cv/Manley%20CV%20jan%202026.pdf" target="_blank" rel="noreferrer" className="underline text-[var(--accent)] hover:opacity-80">
               See the CV
             </a>{" "}
             for a full list.
