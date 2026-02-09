@@ -27,7 +27,7 @@ export const publications: Publication[] = [
     venue: "work in progress",
     link: "/papers/moral+realism+and+semantic+plasticity.pdf",
     tags: ["metaethics", "deflationism"],
-    note: "Moral realists can accept semantic plasticity and explain Moral Twin Earth-style intuitions at low cost",
+    note: "Moral realists can accept semantic plasticity and explain Moral Twin Earth-style intuitions at low cost.",
   },
   {
     title: "God and the Bayesian Conception of Evidence",
@@ -99,7 +99,7 @@ export const publications: Publication[] = [
     tags: ["epistemology", "the apriori"],
     note: "Revises the epistemic condition of 'safety'; rethinks the a priori in light of semantic externalism",
   },
-    {
+  {
     title: "A Gradable Approach to Dispositions",
     venue: "<em>The Philosophical Quarterly</em>, 57: 68–75",
     link: "/papers/gad+published.pdf",
