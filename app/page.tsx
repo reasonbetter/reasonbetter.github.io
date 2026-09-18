@@ -34,8 +34,8 @@ export default function Home() {
             </div>
 
             <div className="flex items-stretch gap-4">
-              <div className="relative w-[38%] max-w-[160px] aspect-[2/3] flex-shrink-0">
-                <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" priority />
+              <div className="relative w-[44%] min-[360px]:w-[49.4%] max-w-[208px] aspect-[2/3] flex-shrink-0">
+                <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 50vw" className="rounded-lg object-cover shadow-sm" priority />
               </div>
               <div className="flex-1">
                 <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
@@ -44,7 +44,7 @@ export default function Home() {
                 <div className="mt-3 flex flex-col gap-2 items-start">
                   <button
                     onClick={() => copyEmail(setCopiedMobile)}
-                    className={`inline-flex items-center rounded-lg border px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)] border-slate-300 dark:border-slate-700`}
+                    className={`inline-flex items-center whitespace-nowrap rounded-lg border px-2.5 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)] border-slate-300 dark:border-slate-700`}
                   >
                     {copiedMobile ? (
                       <>
@@ -63,7 +63,7 @@ export default function Home() {
                       </>
                     )}
                   </button>
-                  <a className="inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)]"
+                  <a className="inline-flex items-center whitespace-nowrap rounded-lg border border-slate-300 dark:border-slate-700 px-2.5 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)]"
                     href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -129,14 +129,14 @@ export default function Home() {
       <section id="about" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800 bg-[#F9FAFB] dark:bg-slate-900">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20 grid md:grid-cols-12 gap-8">
           {/* Left image larger */}
-          <div className="hidden md:block md:col-span-4 pt-0">
-            <div className="relative h-full overflow-hidden">
+          <div className="hidden md:block md:col-span-5 pt-0">
+            <div className="relative w-full max-w-[300px] aspect-[527/830] overflow-hidden">
               <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill className="object-contain object-left" />
             </div>
           </div>
 
           {/* Right content: text + external buttons */}
-          <div className="md:col-span-8 text-[1.05rem] md:text-[1.07rem]">
+          <div className="md:col-span-7 text-[1.05rem] md:text-[1.07rem]">
             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
