@@ -35,7 +35,7 @@ export default function Home() {
 
             <div className="flex items-stretch gap-4">
               <div className="relative w-[38%] max-w-[160px] aspect-[2/3] flex-shrink-0">
-                <Image src="/images/new.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" priority />
+                <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 38vw" className="rounded-lg object-cover shadow-sm" priority />
               </div>
               <div className="flex-1">
                 <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
@@ -131,7 +131,7 @@ export default function Home() {
           {/* Left image larger */}
           <div className="hidden md:block md:col-span-4 pt-0">
             <div className="relative h-full overflow-hidden">
-              <Image src="/images/davidmanley.jpeg" alt="David Manley" fill className="object-contain object-left" />
+              <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill className="object-contain object-left" />
             </div>
           </div>
 
