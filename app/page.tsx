@@ -28,50 +28,47 @@ export default function Home() {
       <section className="border-b border-slate-200 dark:border-slate-800">
         {/* Mobile Hero */}
         <div className="mx-auto max-w-6xl px-4 pt-16 pb-8 md:py-16 md:hidden">
-          <div className="space-y-6">
-            <div>
+          <div className="space-y-5">
+            <div className="space-y-3">
               <h1 id="hero-title-mobile" className={`text-4xl font-bold leading-tight tracking-[-0.035em] ${titleFont.className}`}>David Manley</h1>
+              <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
+                Philosopher working on reasoning, emerging technology, and global priorities.
+              </p>
             </div>
 
-            <div className="flex items-stretch gap-4">
-              <div className="relative w-[44%] min-[360px]:w-[49.4%] max-w-[208px] aspect-[2/3] flex-shrink-0">
-                <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill sizes="(max-width: 768px) 50vw" className="rounded-lg object-cover shadow-sm" priority />
-              </div>
-              <div className="flex-1">
-                <p className="text-lg text-slate-700 dark:text-slate-300 tracking-tighter-less">
-                  Philosopher working on reasoning, emerging technology, and global priorities.
-                </p>
-                <div className="mt-3 flex flex-col gap-2 items-start">
-                  <button
-                    onClick={() => copyEmail(setCopiedMobile)}
-                    className={`inline-flex items-center whitespace-nowrap rounded-lg border px-2.5 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)] border-slate-300 dark:border-slate-700`}
-                  >
-                    {copiedMobile ? (
-                      <>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                        </svg>
-                        Copied
-                      </>
-                    ) : (
-                      <>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                        </svg>
-                        Copy email
-                      </>
-                    )}
-                  </button>
-                  <a className="inline-flex items-center whitespace-nowrap rounded-lg border border-slate-300 dark:border-slate-700 px-2.5 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)]"
-                    href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+            <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg shadow-sm">
+              <Image src="/images/IMG_6768.jpeg" alt="David Manley" fill sizes="(max-width: 768px) calc(100vw - 2rem)" className="object-cover object-[center_35%]" priority />
+            </div>
+
+            <div className="grid grid-cols-2 gap-1.5 min-[360px]:gap-2">
+              <button
+                onClick={() => copyEmail(setCopiedMobile)}
+                className={`inline-flex items-center justify-center whitespace-nowrap rounded-lg border px-2 py-2 text-[13px] min-[360px]:px-3 min-[360px]:text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)] border-slate-300 dark:border-slate-700`}
+              >
+                {copiedMobile ? (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1.5 min-[360px]:mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
                     </svg>
-                    Book a meeting
-                  </a>
-                </div>
-              </div>
+                    Copied
+                  </>
+                ) : (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1.5 min-[360px]:mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    Copy email
+                  </>
+                )}
+              </button>
+              <a className="inline-flex items-center justify-center whitespace-nowrap rounded-lg border border-slate-300 dark:border-slate-700 px-2 py-2 text-[13px] min-[360px]:px-3 min-[360px]:text-sm font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 text-[var(--accent)]"
+                href="https://calendar.app.google/huGbAtsbdEhxYGRh8" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1.5 min-[360px]:mr-2 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                </svg>
+                Book a meeting
+              </a>
             </div>
           </div>
         </div>
@@ -136,7 +133,7 @@ export default function Home() {
           </div>
 
           {/* Right content: text + external buttons */}
-          <div className="md:col-span-7 text-[1.05rem] md:text-[1.07rem]">
+          <div className="md:col-span-7 md:flex md:flex-col md:justify-center text-[1.05rem] md:text-[1.07rem]">
             <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>About</h2>
             <div className="space-y-2">
               <p className="mt-3 leading-6 text-slate-700 dark:text-slate-300 tracking-tighter-less">
