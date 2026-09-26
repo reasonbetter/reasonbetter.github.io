@@ -357,6 +357,18 @@ export default function Home() {
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+              <h3 className="text-lg font-semibold tracking-tight">Phil 611: Measuring and Improving Reasoning in Humans and Machines</h3>
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Upcoming / graduate seminar</p>
+              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
+                How human and AI reasoning goes wrong, how to measure and improve it, and how to design tests and human–AI interactions that reward better reasoning.
+              </p>
+              <div className="mt-5">
+                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
+                  Info & Readings
+                </span>
+              </div>
+            </div>
+            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
               <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
               <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
