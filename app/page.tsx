@@ -348,17 +348,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Upcoming Courses */}
+      {/* Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Upcoming Courses</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Courses</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 611: Measuring and Improving Reasoning in Humans and Machines</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Upcoming / graduate seminar</p>
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Current</p>
               <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 How human and AI reasoning goes wrong, how to measure and improve it, and how to design tests and human–AI interactions that reward better reasoning.
               </p>
@@ -370,7 +370,7 @@ export default function Home() {
             </div>
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Upcoming / upper-level</p>
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
               <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
               </p>
