@@ -358,7 +358,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
               <h3 className="text-lg font-semibold tracking-tight">Phil 611: Measuring and Improving Reasoning in Humans and Machines</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Current</p>
+              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Graduate seminar - Current</p>
               <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
                 How human and AI reasoning goes wrong, how to measure and improve it, and how to design tests and human–AI interactions that reward better reasoning.
               </p>
