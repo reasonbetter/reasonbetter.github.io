@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { Inter } from "next/font/google";
@@ -7,6 +8,7 @@ import { Inter } from "next/font/google";
 const interBold = Inter({ subsets: ["latin"], weight: ["700"] });
 
 export default function Header() {
+  const pathname = usePathname();
   const [showBrand, setShowBrand] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [hiddenMobile, setHiddenMobile] = useState(false);
@@ -15,6 +17,10 @@ export default function Header() {
   // Observe the hero H1 to decide when to show the compact brand in the header
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (pathname !== "/") {
+      setShowBrand(true);
+      return;
+    }
 
     let observer: IntersectionObserver | null = null;
     let target: HTMLElement | null = null;
@@ -56,7 +62,7 @@ export default function Header() {
       window.removeEventListener("resize", onResize);
       if (observer) observer.disconnect();
     };
-  }, []);
+  }, [pathname]);
 
   // Hide on scroll down / show on scroll up (mobile only)
   useEffect(() => {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { publications, Publication } from "@/lib/publications";
 import { talks, Talk } from "@/lib/talks";
+import { COURSES } from "@/lib/courses";
 import VimeoEmbed from "@/components/VimeoEmbed";
 import LiteVimeo from "@/components/LiteVimeo";
 import { Inter } from "next/font/google";
@@ -356,54 +357,29 @@ export default function Home() {
             Course pages with longer descriptions and readings.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 611: Measuring and Improving Reasoning in Humans and Machines</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Graduate seminar - Current</p>
-              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
-                How human and AI reasoning goes wrong, how to measure and improve it, and how to design tests and human–AI interactions that reward better reasoning.
-              </p>
-              <div className="mt-5">
-                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
-                  Info & Readings
-                </span>
-              </div>
-            </div>
-            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 450: Philosophy of Emerging Technology</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
-              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
-                How to shape a better future in a world of AI, human enhancement, climate tech, and engineered viruses: well-being, agency, and risks
-              </p>
-              <div className="mt-5">
-                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
-                  Info & Readings
-                </span>
-              </div>
-            </div>
-            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 360: Global Priorities</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
-              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
-                An interdisciplinary course on the world’s most important problems and how to help: global health/poverty, animals/environment, emerging technologies.
-              </p>
-              <div className="mt-5">
-                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
-                  Info & Readings
-                </span>
-              </div>
-            </div>
-            <div className="rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold tracking-tight">Phil 183: Critical Reasoning</h3>
-              <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">Recurring</p>
-              <p className="mt-4 text-[0.95rem] text-slate-700 dark:text-slate-300">
-                Practical reasoning tools from philosophy, cognitive psych, and behavioral econ: logic, probability, decision theory; biases, evidence, causation.
-              </p>
-              <div className="mt-5">
-                <span className="inline-flex items-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
-                  Info & Readings
-                </span>
-              </div>
-            </div>
+            {COURSES.map(course => (
+              <article key={course.slug} className="flex flex-col rounded-lg border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+                <h3 className="text-lg font-semibold tracking-tight">
+                  <Link href={`/teaching/${course.slug}`} className="hover:text-[var(--accent)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]">
+                    {course.code}: {course.name}
+                  </Link>
+                </h3>
+                <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">{course.status}</p>
+                <p className="mt-4 text-[0.95rem] leading-6 text-slate-700 dark:text-slate-300">
+                  {course.summary}
+                </p>
+                <div className="mt-auto pt-5">
+                  <Link
+                    href={`/teaching/${course.slug}`}
+                    aria-label={`${course.readings.length ? "Info and readings" : "Course description"}: ${course.name}`}
+                    className="inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium text-[var(--accent)] hover:bg-slate-50 dark:hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
+                  >
+                    {course.readings.length ? "Info & Readings" : "Course description"}
+                    <span aria-hidden="true" className="ml-2">→</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

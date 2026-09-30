@@ -1,0 +1,756 @@
+[
+  {
+    "slug": "phil-611-reasoning",
+    "code": "PHIL 611",
+    "name": "Measuring and Improving Reasoning in Humans and Machines",
+    "status": "Graduate seminar · Fall 2026",
+    "summary": "How human and AI reasoning goes wrong, how to measure and improve it, and how to design tests and human–AI interactions that reward better reasoning.",
+    "desc": "The mechanisms that produce belief in us have largely been shaped by pressures that are not aimed at truth: natural selection, social approval, and institutional incentives. Language models are shaped by their own imperfect optimization pressures, including next-token prediction and feedback from human evaluators. This interdisciplinary seminar asks how those pressures affect reasoning in humans and machines, and what we can do to improve it.",
+    "details": [
+      "We consider how to characterize cognitive errors, which interventions improve reasoning, and whether improvements transfer across tasks. A recurring question concerns measurement: can we devise tests of good reasoning where improving a score requires improving the underlying skill? We also examine sycophancy, confabulation, and deception in language models, and ask how reflection, training, and collaboration might produce more reliable epistemics.",
+      "The course brings philosophical analysis into conversation with empirical work in psychology and AI. Student projects move from concepts such as intellectual humility or probabilistic calibration to proposals for measurement and systematic improvement. Graduate students from other disciplines are welcome."
+    ],
+    "readingHeading": "Topics",
+    "readingIntro": "Course ongoing- further topics TBA",
+    "readings": [
+      {
+        "title": "September 8 · What is good human reasoning?",
+        "description": "Normative reasoning standards; the \"rationality wars\"; some candidate maps of skills, biases and heuristics.",
+        "items": [
+          {
+            "title": "McHugh, Norms of Reasoning"
+          },
+          {
+            "title": "Baron, The Point of Normative Models"
+          },
+          {
+            "title": "Gigerenzer, Axiomatic Rationality and Ecological Rationality"
+          },
+          {
+            "title": "Dennett, True Believers: The Intentional Strategy and Why It Works"
+          }
+        ]
+      },
+      {
+        "title": "September 15 · What it takes for a machine to reason",
+        "description": "When are folk-psychological attributions of beliefs, concepts, intentions, and reasoning literally true vs. merely predictively useful; what kind of evidence could distinguish them? When is the \"reasoning\" we see just a generated rationale?",
+        "items": [
+          {
+            "title": "Goldstein and Levinstein, Does ChatGPT Have a Mind?",
+            "note": "Sections 2.4, 3.1, and 3.3 optional"
+          },
+          {
+            "title": "Shanahan et al., Role Play with Large Language Models"
+          },
+          {
+            "title": "Goldstein and Lederman, What Does ChatGPT Want?",
+            "note": "Focus on sections 2.1, 3, 5, and 6"
+          }
+        ]
+      },
+      {
+        "title": "September 22 · Goals, personas, constitutions",
+        "description": "Do LLMs have goals, play roles, and/or have beliefs about characters in their dialogs? How do constitutions, pre-training, and post-training shape these dispositions, and which dispositions survive a change of persona/speaker/frame? How useful is a nested intentional stance picture?",
+        "items": [
+          {
+            "title": "Marks et al., The Persona Selection Model",
+            "href": "https://alignment.anthropic.com/2026/psm/"
+          },
+          {
+            "title": "Hubinger et al., Conditioning Predictive Models",
+            "href": "https://arxiv.org/html/2302.00805"
+          },
+          {
+            "title": "Kutasov et al., Teaching Claude Why",
+            "href": "https://alignment.anthropic.com/2026/teaching-claude-why/"
+          },
+          {
+            "title": "Li et al., Disentangling Intent from Role",
+            "href": "https://arxiv.org/html/2605.01899v1",
+            "optional": true
+          },
+          {
+            "title": "Wang et al., Persona Features Control Emergent Misalignment",
+            "href": "https://arxiv.org/html/2506.19823",
+            "optional": true
+          },
+          {
+            "title": "Betley et al., Weird Generalization and Inductive Back Doors",
+            "href": "https://arxiv.org/html/2512.09742",
+            "optional": true
+          },
+          {
+            "title": "Qi et al., Safety Alignment Should Be Made More Than Just a Few Tokens Deep",
+            "href": "https://arxiv.org/html/2406.05946v1",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "September 29 · How well do reasoners understand their own judgments?",
+        "description": "Do reasoners' accounts of their own reasoning reflect the real explanations for their answers? People and LLMs both confabulate, but in different ways. What's the difference between introspective awareness and confident guessing about one's internal states? When a model \"introspects\", whose states are being reported- the LLM's or the Assistant's?",
+        "items": [
+          {
+            "title": "Chen et al., Reasoning Models Don't Always Say What They Think",
+            "href": "https://www.anthropic.com/research/reasoning-models-dont-say-think"
+          },
+          {
+            "title": "Lindsey, Signs of Introspection in Large Language Models",
+            "href": "https://www.anthropic.com/research/introspection"
+          },
+          {
+            "title": "Lederman and Mahowald, Emergent Introspection in AI Is Content-Agnostic",
+            "href": "https://arxiv.org/html/2603.05414v2"
+          },
+          {
+            "title": "Hall et al., Lifting the Veil of Morality",
+            "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0045457&type=printable"
+          },
+          {
+            "title": "Comșa and Shanahan, Does It Make Sense to Speak of Introspection in Large Language Models?",
+            "href": "https://arxiv.org/html/2506.05068v2",
+            "optional": true
+          },
+          {
+            "title": "Boppana et al., Reasoning Theater",
+            "href": "https://arxiv.org/abs/2603.05488",
+            "optional": true
+          },
+          {
+            "title": "Emmons et al., When Chain of Thought Is Necessary, Language Models Struggle to Evade Monitors",
+            "href": "https://arxiv.org/html/2507.05246v1",
+            "optional": true
+          },
+          {
+            "title": "Johansson et al., Failure to Detect Mismatches between Intention and Outcome in a Simple Decision Task",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "phil-421",
+    "code": "PHIL 421",
+    "name": "Philosophy of Emerging Technology",
+    "status": "Recurring · Upper-level undergraduate course",
+    "summary": "How to shape a better future in a world of AI, human enhancement, climate technology, and engineered viruses: well-being, agency, and risks.",
+    "desc": "This course explores philosophical issues raised by recent and near-future technologies, including artificial intelligence, climate engineering, virtual reality, surveillance, gene editing, treatments for aging, and engineered viruses. We consider how these technologies may affect human well-being and agency, evaluate their risks, and ask how we might help shape a better future.",
+    "details": [
+      "The course asks how AI may change work, relationships, and our access to knowledge; what principles should guide artificial agents; and what would make an artificial mind conscious or deserving of moral consideration. We also examine surveillance and autonomy, biosecurity, climate engineering, interventions in wild and farmed animals, and the ethics of human enhancement.",
+      "Questions of governance and responsibility run throughout: which technologies should we develop, who should control them, and how should we weigh immediate benefits against catastrophic risks and effects on future generations?"
+    ],
+    "readingIntro": "Readings from the Winter 2026 offering, grouped by topic. Optional readings are marked.",
+    "readings": [
+      {
+        "title": "Technology, progress, and the future",
+        "items": [
+          {
+            "title": "Suleyman, The Coming Wave",
+            "note": "Chapter 2"
+          },
+          {
+            "title": "Roser, Technology over the Long Run",
+            "href": "https://ourworldindata.org/technology-long-run"
+          },
+          {
+            "title": "Walsh, The Doomers Are Wrong"
+          },
+          {
+            "title": "Lessig, Code Is Law"
+          },
+          {
+            "title": "Boudry, The Seven Laws of Declinism",
+            "href": "https://maartenboudry.substack.com/p/the-seven-laws-of-declinism",
+            "optional": true
+          },
+          {
+            "title": "Ord, The Precipice",
+            "note": "Introduction and chapter 1"
+          }
+        ]
+      },
+      {
+        "title": "Understanding AI and its effects on reasoning",
+        "items": [
+          {
+            "title": "3Blue1Brown, But What Is a Neural Network?",
+            "href": "https://www.youtube.com/watch?v=aircAruvnKk",
+            "note": "Video"
+          },
+          {
+            "title": "Karpathy, Software 2.0",
+            "href": "https://karpathy.medium.com/software-2-0-a64152b37c35"
+          },
+          {
+            "title": "Wolfram, What Is ChatGPT Doing … and Why Does It Work?",
+            "href": "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/",
+            "optional": true
+          },
+          {
+            "title": "Rini, Deepfakes: Truth in Trouble",
+            "href": "https://www.newphilosopher.com/articles/deepfakes-truth-in-trouble/"
+          },
+          {
+            "title": "Lu, Tormala, and Duhachek, How AI Sources Can Increase Openness to Opposing Views",
+            "note": "Pages 1–2 and 10–11"
+          },
+          {
+            "title": "Thompson, The End of Thinking",
+            "href": "https://www.derekthompson.org/p/the-end-of-thinking"
+          }
+        ]
+      },
+      {
+        "title": "Work, well-being, and relationships",
+        "items": [
+          {
+            "title": "Autor and Thompson, Beyond Job Displacement",
+            "href": "https://www.digitalistpapers.com/vol2/autorthompson",
+            "note": "Sections III–V"
+          },
+          {
+            "title": "Susskind, A World without Work",
+            "note": "Chapter 7, assigned excerpt pages 8–14"
+          },
+          {
+            "title": "Amodei, The Adolescence of Technology",
+            "href": "https://www.darioamodei.com/essay/the-adolescence-of-technology#4-player-piano",
+            "note": "Section 4"
+          },
+          {
+            "title": "Balwit, “Career” Advice from the AI Frontier",
+            "href": "https://www.digitalistpapers.com/vol2/balwit",
+            "optional": true
+          },
+          {
+            "title": "Keynes, Economic Possibilities for Our Grandchildren",
+            "optional": true
+          },
+          {
+            "title": "Nyholm, This Is Technology Ethics",
+            "note": "Chapter 9"
+          },
+          {
+            "title": "De Freitas et al., AI Companions Reduce Loneliness",
+            "note": "General Discussion, pages 18–20"
+          },
+          {
+            "title": "De Freitas et al., Lessons from an App Update at Replika AI: Identity Discontinuity in Human–AI Relationships",
+            "note": "Pages 34–37"
+          }
+        ]
+      },
+      {
+        "title": "AI risk, alignment, consciousness, and moral status",
+        "items": [
+          {
+            "title": "Hendrycks et al., An Overview of Catastrophic AI Risks",
+            "note": "Pages 1–17"
+          },
+          {
+            "title": "Amodei, The Adolescence of Technology",
+            "href": "https://www.darioamodei.com/essay/the-adolescence-of-technology#2-a-surprising-and-terrible-empowerment",
+            "note": "Section 2"
+          },
+          {
+            "title": "RAND, Global Catastrophic Risk Assessment",
+            "note": "Chapter 9: Artificial Intelligence",
+            "optional": true
+          },
+          {
+            "title": "Ngo and Bales, Deceit and Power",
+            "note": "Especially sections 3–6"
+          },
+          {
+            "title": "Gabriel, Artificial Intelligence, Values, and Alignment",
+            "note": "Sections 3–4"
+          },
+          {
+            "title": "Park et al., AI Deception: A Survey of Examples, Risks, and Potential Solutions",
+            "optional": true
+          },
+          {
+            "title": "Chalmers, Could a Large Language Model Be Conscious?",
+            "href": "https://www.bostonreview.net/articles/could-a-large-language-model-be-conscious/"
+          },
+          {
+            "title": "Sebo and Long, Moral Consideration for AI Systems by 2030",
+            "note": "Focus on sections 2 and 4"
+          },
+          {
+            "title": "Schwitzgebel and Garza, A Defense of the Rights of AI",
+            "optional": true
+          },
+          {
+            "title": "Butlin et al., Consciousness in Artificial Intelligence",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Surveillance, biosecurity, and climate engineering",
+        "items": [
+          {
+            "title": "Véliz, Why Democracy Needs Privacy",
+            "href": "https://www.bostonreview.net/articles/why-democracy-needs-privacy/"
+          },
+          {
+            "title": "Amodei, The Adolescence of Technology",
+            "href": "https://www.darioamodei.com/essay/the-adolescence-of-technology#3-the-odious-apparatus",
+            "note": "Section 3"
+          },
+          {
+            "title": "Feldstein, The Global Expansion of AI Surveillance",
+            "href": "https://carnegieendowment.org/research/2019/09/the-global-expansion-of-ai-surveillance?lang=en"
+          },
+          {
+            "title": "CBS News, Hegseth Demands Full Military Access to Anthropic’s AI Model",
+            "href": "https://www.cbsnews.com/news/hegseth-anthropic-full-access-claude-ai-model/"
+          },
+          {
+            "title": "Suleyman, The Coming Wave",
+            "note": "Chapter 5"
+          },
+          {
+            "title": "Interview with Kevin Esvelt",
+            "href": "https://asteriskmag.com/issues/01/how-to-prevent-the-next-pandemic"
+          },
+          {
+            "title": "Esvelt, Delay, Detect, Defend",
+            "optional": true
+          },
+          {
+            "title": "Hausfather and Keith, A Responsible Way to Cool the Planet",
+            "href": "https://davidkeith.earth/the-new-york-times-a-responsible-way-to-cool-the-planet/"
+          },
+          {
+            "title": "Keith, A Case for Climate Engineering",
+            "note": "Chapter 5"
+          },
+          {
+            "title": "Kolbert, A Startup’s Bid to Dim the Sun"
+          }
+        ]
+      },
+      {
+        "title": "Animals, disease vectors, and agricultural technology",
+        "items": [
+          {
+            "title": "Cobb, Gene Drives Could Fight Malaria and Other Global Killers but Might Have Unintended Consequences"
+          },
+          {
+            "title": "Barry et al., Why the Halt of Target Malaria Shows Social Science Is Crucial for Governing Emerging Technologies",
+            "href": "https://ges.research.ncsu.edu/2025/09/blog-governing-emerging-technologies-a-lesson-from-burkina-faso/"
+          },
+          {
+            "title": "Kurzgesagt, How Nuclear Flies Protect You from Flesh-Eating Parasites",
+            "href": "https://www.youtube.com/watch?v=zxq60I5RSW8",
+            "note": "Video"
+          },
+          {
+            "title": "Johannsen, Wild Animal Ethics",
+            "note": "Excerpts"
+          },
+          {
+            "title": "Kupferschmidt, After Humiliating Raid, Burkina Faso Halts Gene-Drive Project to Fight Malaria",
+            "href": "https://www.science.org/content/article/after-humiliating-raid-burkina-faso-halts-gene-drive-project-fight-malaria",
+            "optional": true
+          },
+          {
+            "title": "Habtewold et al., Gene-Drive-Capable Mosquitoes",
+            "note": "Research study",
+            "optional": true
+          },
+          {
+            "title": "Huemer, The Conscience of a Human",
+            "note": "Excerpts"
+          },
+          {
+            "title": "Shriver, Can Technology Succeed Where Morality Has Failed?",
+            "note": "Pages 115–119; remainder optional"
+          },
+          {
+            "title": "Devolder, Genome Editing in Livestock, Complicity, and the Technological Fix Objection",
+            "note": "Pages 1–5; remainder optional"
+          },
+          {
+            "title": "Singer, A Clear Case for Golden Rice"
+          }
+        ]
+      },
+      {
+        "title": "Human enhancement, aging, and digital minds",
+        "items": [
+          {
+            "title": "Kass et al., Biotechnology and the Pursuit of Happiness",
+            "href": "https://sitearchives.georgetown.edu/kie-pcbe/reports/beyondtherapy/chapter1.html"
+          },
+          {
+            "title": "Ranisch, Germline Gene Editing and Genetic Enhancement: The Value of Non-Positional Goods"
+          },
+          {
+            "title": "Evans, Setting Ethical Limits on Human Gene Editing after the Fall of the Somatic/Germline Barrier"
+          },
+          {
+            "title": "Cohen, Did CRISPR Help—or Harm—the First-Ever Gene-Edited Babies?",
+            "href": "https://www.science.org/content/article/did-crispr-help-or-harm-first-ever-gene-edited-babies"
+          },
+          {
+            "title": "Innovative Genomics Institute, CRISPR & Ethics",
+            "href": "https://innovativegenomics.org/crisprpedia/crispr-ethics/",
+            "note": "Somatic vs. germline editing; treatment, prevention, and enhancement; regulating CRISPR ethics"
+          },
+          {
+            "title": "Kamm, Is There a Problem with Enhancement?"
+          },
+          {
+            "title": "Savulescu, Genetic Interventions and the Ethics of Enhancement of Human Beings"
+          },
+          {
+            "title": "Kuruc and Manley, The Ethics, Economics, and Demographics of Delaying Aging"
+          },
+          {
+            "title": "Chalmers, Uploading: A Philosophical Analysis",
+            "note": "Pages 102–109"
+          },
+          {
+            "title": "Song and Dever, Brain Freeze",
+            "href": "https://asteriskmag.com/issues/10/brain-freeze"
+          },
+          {
+            "title": "Thompson, Scientists Revive Activity in Frozen Mouse Brains",
+            "optional": true
+          },
+          {
+            "title": "Story, Cryonics: Traps and Transformations",
+            "optional": true
+          },
+          {
+            "title": "Sandberg and Bostrom, Whole Brain Emulation: A Roadmap",
+            "href": "https://gwern.net/doc/ai/scaling/hardware/2008-sandberg-wholebrainemulationroadmap.pdf",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Catastrophic risk and what we should do",
+        "items": [
+          {
+            "title": "Bostrom, The Vulnerable World Hypothesis",
+            "note": "Pages 455–465"
+          },
+          {
+            "title": "Robichaud, The Puzzle of Non-Proliferation",
+            "href": "https://asteriskmag.com/issues/03/the-puzzle-of-non-proliferation"
+          },
+          {
+            "title": "Kuhlau et al., The Ethics of Disseminating Dual-Use Knowledge",
+            "optional": true
+          },
+          {
+            "title": "Suleyman, The Coming Wave",
+            "note": "Chapter 13; chapter 14, assigned excerpt pages 35–42 (section 10); Afterword. Remainder of chapter 14 optional"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "phil-360",
+    "code": "PHIL 360",
+    "name": "Global Priorities",
+    "status": "Recurring · Undergraduate course",
+    "summary": "An interdisciplinary course on the world’s most important problems and how to help: global health and poverty, animals and the environment, and emerging technologies.",
+    "desc": "What would we do if we cared about everyone equally? This course investigates the world’s most important problems and what we can do to help with our careers, time, and resources. We focus on global health and poverty, animals and the environment, and emerging technologies, asking how to compare problems, assess evidence, and choose among interventions when resources are limited.",
+    "details": [
+      "The course draws on development economics, global health, environmental science, international studies, and progress studies. We examine both particular interventions and the institutions that make progress possible: research funding, incentives, coordination, regulation, and the capacity to implement policy. Topics include health and development, climate and energy, animal welfare, AI, demographic change, and global catastrophic risk.",
+      "Philosophical questions include how to weigh health, freedom, opportunity, and happiness; how much future people and nonhuman animals matter; and what responsibilities individuals have to improve the world. PHIL 360 is a more advanced version of PHIL 250: Changing the World, with substantial overlap and more demanding engagement with arguments and evidence."
+    ],
+    "readingIntro": "Books and readings listed for Fall 2026 as of September 30. Later units develop as the term progresses; optional readings are marked.",
+    "readings": [
+      {
+        "title": "Required books",
+        "items": [
+          {
+            "title": "Bregman, Moral Ambition",
+            "note": "2025"
+          },
+          {
+            "title": "Banerjee and Duflo, Poor Economics",
+            "note": "Revised 2025 edition"
+          },
+          {
+            "title": "Ritchie, Not the End of the World",
+            "note": "2024"
+          }
+        ]
+      },
+      {
+        "title": "Caring about the world",
+        "items": [
+          {
+            "title": "Ritchie, Not the End of the World",
+            "note": "Introduction and chapter 1"
+          },
+          {
+            "title": "Roser, Most of Us Are Wrong about How the World Has Changed",
+            "href": "https://ourworldindata.org/wrong-about-the-world"
+          },
+          {
+            "title": "Roser, The World Is Awful. The World Is Much Better. The World Can Be Much Better.",
+            "href": "https://ourworldindata.org/much-better-awful-can-be-better"
+          },
+          {
+            "title": "The World Is Falling Apart",
+            "note": "Introduction",
+            "optional": true
+          },
+          {
+            "title": "Negativity Drives Online News Consumption",
+            "optional": true
+          },
+          {
+            "title": "Gapminder, Dollar Street",
+            "href": "https://www.gapminder.org/dollar-street",
+            "note": "Compare everyday life across income levels"
+          },
+          {
+            "title": "Roser, The Limits of Personal Experience",
+            "href": "https://ourworldindata.org/limits-personal-experience"
+          },
+          {
+            "title": "Giving What We Can, How Rich Am I?",
+            "href": "https://howrichami.givingwhatwecan.org/",
+            "note": "Interactive resource"
+          },
+          {
+            "title": "Appiah, What Will the Future Condemn Us For?"
+          },
+          {
+            "title": "Bregman, Moral Ambition",
+            "note": "Prologue; chapter 1; chapter 9, sections 1–3"
+          },
+          {
+            "title": "Ord, Global Poverty and Morality"
+          },
+          {
+            "title": "Soares, Fighting for Something"
+          }
+        ]
+      },
+      {
+        "title": "Prioritizing: emotion, opportunity cost, and evidence",
+        "items": [
+          {
+            "title": "Bregman, Moral Ambition",
+            "note": "Chapter 5"
+          },
+          {
+            "title": "Slovic, The More Who Die, the Less We Care"
+          },
+          {
+            "title": "Soares, On Caring"
+          },
+          {
+            "title": "Bloom, Empathy and Its Discontents",
+            "optional": true
+          },
+          {
+            "title": "Caviola et al., Obstacles to Effective Giving",
+            "optional": true
+          },
+          {
+            "title": "MacAskill, Doing Good Better",
+            "note": "Introduction and chapter 2"
+          },
+          {
+            "title": "Glanville and Pattison, Prioritizing Global Responsibilities",
+            "note": "Introduction"
+          },
+          {
+            "title": "Duflo, Field Experiments and the Practice of Policy",
+            "href": "https://economics.mit.edu/sites/default/files/2022-08/2020.08%20Field%20Experiments%20and%20the%20Practice%20of%20Poli.pdf",
+            "note": "Introduction, sections I–II, and Conclusion"
+          },
+          {
+            "title": "Manley, Reason Better",
+            "note": "Chapter 7, section 7.3"
+          },
+          {
+            "title": "Liebman, When ‘Can’t Miss’ Programs Fail",
+            "href": "https://www.vitalcitynyc.org/when-cant-miss-programs-fail/"
+          }
+        ]
+      },
+      {
+        "title": "Global health and development",
+        "items": [
+          {
+            "title": "Banerjee and Duflo, Poor Economics",
+            "note": "Foreword and chapter 1; chapter 4 up to ‘Why Schools Fail’; chapter 3; chapter 2 except ‘Are the Poor Really Eating Well, and Eating Enough?’"
+          },
+          {
+            "title": "van Teutem and Ritchie, Foreign Aid from the United States Saved Millions of Lives Each Year",
+            "href": "https://ourworldindata.org/us-foreign-aid-saved-millions"
+          },
+          {
+            "title": "Gibbs, The ABCs of Policy Research",
+            "href": "https://www.vitalcitynyc.org/the-abcs-of-policy-research/"
+          },
+          {
+            "title": "Ritchie, Safe Drinking Water",
+            "href": "https://ourworldindata.org/what-no-safe-water-means"
+          },
+          {
+            "title": "GiveWell, Water Quality Interventions",
+            "href": "https://www.givewell.org/international/technical/programs/water-quality-interventions",
+            "note": "Sections 1–2.2 and 5.1"
+          },
+          {
+            "title": "Dadonaite, No Child Should Die from Pneumonia",
+            "href": "https://ourworldindata.org/child-deaths-from-pneumonia"
+          },
+          {
+            "title": "Donaldson, Gilbert, and Hu, The End of Lead",
+            "href": "https://worksinprogress.co/issue/the-end-of-lead/"
+          },
+          {
+            "title": "Egger, Walker et al., Can Cash Transfers Save Lives?",
+            "note": "Introduction and Conclusion"
+          },
+          {
+            "title": "Ritchie, Maternal Deaths",
+            "href": "https://ourworldindata.org/maternal-deaths-save-mothers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "phil-183",
+    "code": "PHIL 183",
+    "name": "Critical Reasoning",
+    "status": "Recurring · Undergraduate course",
+    "summary": "Practical reasoning tools from philosophy, cognitive psychology, and behavioral economics: logic, probability, decision theory, biases, evidence, and causation.",
+    "desc": "Reason better when deciding what to believe and when deciding what to do. This course provides practical tools drawn from cognitive psychology, behavioral economics, logic, probability, and decision theory. We examine heuristics and biases—spontaneous judgments that can be predictably irrational—and study what good deductive, causal, and probabilistic reasoning looks like.",
+    "details": [
+      "The goal is to develop effective reasoning skills with applications in personal and professional life: recognizing and constructing compelling arguments, assessing evidence, distinguishing correlation from causation, updating beliefs, and making decisions under uncertainty. The course is open to students from across the University.",
+      "My textbook, Reason Better: An Interdisciplinary Guide to Critical Thinking, grew out of this course."
+    ],
+    "readings": []
+  },
+  {
+    "slug": "phil-611-future",
+    "code": "PHIL 611",
+    "name": "Philosophy of the Future",
+    "status": "Graduate seminar · Fall 2017",
+    "summary": "Human enhancement and life extension, the value of future populations, and the ethical and philosophical questions raised by artificial general intelligence.",
+    "desc": "This graduate seminar examines philosophical issues raised by future technology. The prospect of significant human enhancement prompts questions about human nature, personal identity, well-being, and the desirability of vastly extended lifespans. Looking further ahead, we ask how much we should care about distant outcomes and which visions of humanity’s future are worth working toward.",
+    "details": [
+      "How should we weigh equality against autonomy, average well-being against total well-being, and conserving existing forms of life against creating new ones? How should the value of individual subjects—human, posthuman, or animal—relate to the value of species and ecosystems? These questions bear on population ethics and the importance of reducing existential risk.",
+      "The possibility of artificial general intelligence also raises questions in ethics and the philosophy of mind, alongside the practical problem of aligning artificial agents with our values."
+    ],
+    "readingIntro": "Readings listed on the Fall 2017 course schedule. Optional background readings are marked.",
+    "readings": [
+      {
+        "title": "Lifespan",
+        "items": [
+          {
+            "title": "Overall, Précis of Aging, Death, and Human Longevity: A Philosophical Inquiry"
+          },
+          {
+            "title": "Temkin, Is Living Longer Living Better?"
+          },
+          {
+            "title": "Friend, Silicon Valley’s Quest to Live Forever",
+            "href": "https://www.newyorker.com/magazine/2017/04/03/silicon-valleys-quest-to-live-forever",
+            "optional": true
+          },
+          {
+            "title": "Miller, Extending Life: Scientific Prospects and Political Obstacles",
+            "optional": true
+          },
+          {
+            "title": "de Grey, Demystifying Aging",
+            "optional": true
+          },
+          {
+            "title": "Bortolotti, Agency, Life Extension, and the Meaning of Life"
+          },
+          {
+            "title": "Bunn, Life Extension and Future Generations"
+          },
+          {
+            "title": "Arrhenius, Life Extension versus Replacement"
+          },
+          {
+            "title": "Cutas, Life Extension, Overpopulation and the Right to Life: Against Lethal Ethics"
+          },
+          {
+            "title": "Bognar, Fair Innings"
+          },
+          {
+            "title": "Wareham, Substantial Life Extension and the Fair Distribution of Healthspans"
+          }
+        ]
+      },
+      {
+        "title": "Enhancement",
+        "items": [
+          {
+            "title": "Sandel, The Case against Perfection",
+            "href": "https://www.theatlantic.com/magazine/archive/2004/04/the-case-against-perfection/302927/"
+          },
+          {
+            "title": "Kamm, Is There a Problem with Enhancement?"
+          },
+          {
+            "title": "Singer, Parental Choice and Human Improvement"
+          },
+          {
+            "title": "Savulescu and Sparrow, Making Better Babies, Pro and Con",
+            "note": "Debate transcript"
+          },
+          {
+            "title": "DeGrazia, Moral Enhancement, Freedom, and What We (Should) Value in Moral Behaviour"
+          },
+          {
+            "title": "Chalmers, The Singularity",
+            "href": "https://consc.net/papers/singularity.pdf",
+            "note": "Sections 8–10"
+          }
+        ]
+      },
+      {
+        "title": "Future populations",
+        "items": [
+          {
+            "title": "Greaves, Population Axiology"
+          },
+          {
+            "title": "Parfit, Can We Avoid the Repugnant Conclusion?"
+          },
+          {
+            "title": "Arrhenius, The Moral Status of Potential People"
+          },
+          {
+            "title": "Beckstead, The Case for Prioritizing Existential Risk"
+          },
+          {
+            "title": "Greaves and Ord, Moral Uncertainty about Population Axiology"
+          }
+        ]
+      },
+      {
+        "title": "General artificial intelligence",
+        "items": [
+          {
+            "title": "Bostrom, Superintelligence",
+            "note": "Chapters 1, 4, 6, and 7; selected sections from chapters 8, 9, 10, 12, 13, and 15"
+          }
+        ]
+      }
+    ]
+  }
+]
