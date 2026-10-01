@@ -352,7 +352,7 @@ export default function Home() {
       {/* Courses */}
       <section id="teaching" className="scroll-mt-24 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-8 md:py-20">
-          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Courses</h2>
+          <h2 className={`mt-0 mb-2 text-[1.7rem] md:text-[2.05rem] font-semibold leading-snug tracking-[0em] ${titleFont.className}`}>Selected Courses</h2>
           <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
             Course pages with longer descriptions and readings.
           </p>
@@ -364,7 +364,7 @@ export default function Home() {
                     {course.code}: {course.name}
                   </Link>
                 </h3>
-                <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">{course.status}</p>
+                <p className="mt-2 text-[0.95rem] text-slate-600 dark:text-slate-400">{course.status.replace(/ · (?:Fall|Winter|Spring|Summer) \d{4}/g, "")}</p>
                 <p className="mt-4 text-[0.95rem] leading-6 text-slate-700 dark:text-slate-300">
                   {course.summary}
                 </p>
