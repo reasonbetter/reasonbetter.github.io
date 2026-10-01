@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import { COURSES, COURSE_ALIASES, getCourse } from "@/lib/courses";
+import { COURSES, COURSE_ALIASES, getCourse, type ReadingItem } from "@/lib/courses";
 
 const titleFont = Inter({
   subsets: ["latin"],
@@ -24,6 +24,33 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: `${course.code}: ${course.name} — David Manley`,
     description: course.desc,
   };
+}
+
+function ReadingEntry({ item }: { item: ReadingItem }) {
+  return (
+    <li className="pl-1">
+      {item.href ? (
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noreferrer"
+          className="text-[var(--accent)] underline decoration-slate-300 underline-offset-4 hover:decoration-current dark:decoration-slate-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
+        >
+          {item.title}
+          <span className="sr-only"> (opens in a new tab)</span>
+        </a>
+      ) : item.title}
+      {item.optional && (
+        <span className="ml-2 inline-block rounded bg-[var(--accent-bg)] px-2 py-0.5 text-xs font-medium text-[var(--accent)]">Optional</span>
+      )}
+      {item.note && <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{item.note}</p>}
+      {item.parts && (
+        <ul className="mt-2 list-disc space-y-2 pl-5 text-sm">
+          {item.parts.map((part, index) => <ReadingEntry key={`${part.title}-${index}`} item={part} />)}
+        </ul>
+      )}
+    </li>
+  );
 }
 
 export default function CoursePage({ params }: { params: { slug: string } }) {
@@ -65,23 +92,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
                 )}
                 <ul className="mt-4 list-disc space-y-3 pl-5 leading-6 text-slate-700 dark:text-slate-300">
                   {section.items.map((item, index) => (
-                    <li key={`${item.title}-${index}`} className="pl-1">
-                      {item.href ? (
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-[var(--accent)] underline decoration-slate-300 underline-offset-4 hover:decoration-current dark:decoration-slate-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
-                        >
-                          {item.title}
-                          <span className="sr-only"> (opens in a new tab)</span>
-                        </a>
-                      ) : item.title}
-                      {item.optional && (
-                        <span className="ml-2 inline-block rounded bg-[var(--accent-bg)] px-2 py-0.5 text-xs font-medium text-[var(--accent)]">Optional</span>
-                      )}
-                      {item.note && <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{item.note}</p>}
-                    </li>
+                    <ReadingEntry key={`${item.title}-${index}`} item={item} />
                   ))}
                 </ul>
               </section>

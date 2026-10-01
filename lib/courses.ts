@@ -5,6 +5,7 @@ export type ReadingItem = {
   href?: string;
   note?: string;
   optional?: boolean;
+  parts?: ReadingItem[];
 };
 export type ReadingSection = { title: string; description?: string; items: ReadingItem[] };
 export type Course = {
@@ -24,8 +25,11 @@ export type Course = {
 // the task outputs for the offering and evidence behind each reading list.
 export const COURSES: Course[] = courseContent;
 
-// Keep existing bookmarks working after correcting the course number.
-export const COURSE_ALIASES: Record<string, string> = { "phil-450": "phil-421" };
+// Keep existing bookmarks working after course updates.
+export const COURSE_ALIASES: Record<string, string> = {
+  "phil-450": "phil-421",
+  "phil-611-future": "phil-611-axiology",
+};
 
 export function getCourse(slug: string) {
   return COURSES.find(course => course.slug === (COURSE_ALIASES[slug] ?? slug));

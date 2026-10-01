@@ -467,7 +467,6 @@
       "The course draws on development economics, global health, environmental science, international studies, and progress studies. We examine both particular interventions and the institutions that make progress possible: research funding, incentives, coordination, regulation, and the capacity to implement policy. Topics include health and development, climate and energy, animal welfare, AI, demographic change, and global catastrophic risk.",
       "Philosophical questions include how to weigh health, freedom, opportunity, and happiness; how much future people and nonhuman animals matter; and what responsibilities individuals have to improve the world. PHIL 360 is a more advanced version of PHIL 250: Changing the World, with substantial overlap and more demanding engagement with arguments and evidence."
     ],
-    "readingIntro": "Readings from Fall 2026, supplemented with readings from PHIL 250: Changing the World (Fall 2025). Optional readings are marked.",
     "readings": [
       {
         "title": "Required books",
@@ -562,7 +561,7 @@
           },
           {
             "title": "MacAskill, Doing Good Better",
-            "note": "Introduction and chapter 2"
+            "note": "Introduction and chapters 2–3"
           },
           {
             "title": "Glanville and Pattison, Prioritizing Global Responsibilities",
@@ -580,10 +579,6 @@
           {
             "title": "Liebman, When ‘Can’t Miss’ Programs Fail",
             "href": "https://www.vitalcitynyc.org/when-cant-miss-programs-fail/"
-          },
-          {
-            "title": "MacAskill, Doing Good Better",
-            "note": "Chapter 3"
           },
           {
             "title": "Ord, The Moral Imperative toward Cost-Effectiveness"
@@ -782,7 +777,7 @@
             "optional": true
           },
           {
-            "title": "80,000 Hours, Factory Farming",
+            "title": "Hilton, Factory Farming",
             "href": "https://80000hours.org/problem-profiles/factory-farming/",
             "optional": true
           }
@@ -793,23 +788,25 @@
         "items": [
           {
             "title": "RAND, Global Catastrophic Risk Assessment",
-            "note": "Summary"
-          },
-          {
-            "title": "RAND, Severe Pandemics",
-            "note": "Global Catastrophic Risk Assessment"
-          },
-          {
-            "title": "RAND, Nuclear War",
-            "note": "Global Catastrophic Risk Assessment"
-          },
-          {
-            "title": "RAND, Rapid and Severe Climate Change",
-            "note": "Global Catastrophic Risk Assessment, pages 63–70 and 77–79"
-          },
-          {
-            "title": "RAND, Artificial Intelligence",
-            "note": "Global Catastrophic Risk Assessment, pages 115–122 and 126–128"
+            "parts": [
+              {
+                "title": "Summary"
+              },
+              {
+                "title": "Severe Pandemics"
+              },
+              {
+                "title": "Nuclear War"
+              },
+              {
+                "title": "Rapid and Severe Climate Change",
+                "note": "Pages 63–70 and 77–79"
+              },
+              {
+                "title": "Artificial Intelligence",
+                "note": "Pages 115–122 and 126–128"
+              }
+            ]
           },
           {
             "title": "Ough, The Anti-Catastrophe League",
@@ -836,34 +833,34 @@
             "note": "Chapters 6–7; pages 204–226 (chapter 10, section 3 through the end of the book)"
           },
           {
-            "title": "80,000 Hours, Can One Person Make a Difference?",
-            "href": "https://80000hours.org/career-guide/can-one-person-make-a-difference/",
-            "note": "Career Guide, part 2"
-          },
-          {
-            "title": "80,000 Hours, Which Careers Help the Most People?",
-            "href": "https://80000hours.org/career-guide/high-impact-jobs/#recap-of-our-career-guide-so-far",
-            "note": "Career Guide, part 6"
-          },
-          {
-            "title": "80,000 Hours, Career Capital",
-            "href": "https://80000hours.org/career-guide/career-capital/",
-            "note": "Career Guide, part 7"
-          },
-          {
-            "title": "80,000 Hours, Personal Fit",
-            "href": "https://80000hours.org/career-guide/personal-fit/",
-            "note": "Career Guide, part 8",
-            "optional": true
+            "title": "Todd, 80,000 Hours: How to Have a Fulfilling Career That Does Good",
+            "parts": [
+              {
+                "title": "Part 2: Can One Person Make a Difference?",
+                "href": "https://80000hours.org/career-guide/can-one-person-make-a-difference/"
+              },
+              {
+                "title": "Part 6: Which Careers Help the Most People?",
+                "href": "https://80000hours.org/career-guide/high-impact-jobs/#recap-of-our-career-guide-so-far"
+              },
+              {
+                "title": "Part 7: Career Capital",
+                "href": "https://80000hours.org/career-guide/career-capital/"
+              },
+              {
+                "title": "Part 8: Personal Fit",
+                "href": "https://80000hours.org/career-guide/personal-fit/",
+                "optional": true
+              },
+              {
+                "title": "Part 9: How to Be Successful",
+                "href": "https://80000hours.org/career-guide/how-to-be-successful/",
+                "optional": true
+              }
+            ]
           },
           {
             "title": "Christiano and Neimand, Stop Raising Awareness Already",
-            "optional": true
-          },
-          {
-            "title": "80,000 Hours, How to Be Successful",
-            "href": "https://80000hours.org/career-guide/how-to-be-successful/",
-            "note": "Career Guide, part 9",
             "optional": true
           }
         ]
@@ -884,113 +881,105 @@
     "readings": []
   },
   {
-    "slug": "phil-611-future",
+    "slug": "phil-611-axiology",
     "code": "PHIL 611",
-    "name": "Philosophy of the Future",
-    "status": "Graduate seminar · Fall 2017",
-    "summary": "Human enhancement and life extension, the value of future populations, and the ethical and philosophical questions raised by artificial general intelligence.",
-    "desc": "This graduate seminar examines philosophical issues raised by future technology. The prospect of significant human enhancement prompts questions about human nature, personal identity, well-being, and the desirability of vastly extended lifespans. Looking further ahead, we ask how much we should care about distant outcomes and which visions of humanity’s future are worth working toward.",
-    "details": [
-      "How should we weigh equality against autonomy, average well-being against total well-being, and conserving existing forms of life against creating new ones? How should the value of individual subjects—human, posthuman, or animal—relate to the value of species and ecosystems? These questions bear on population ethics and the importance of reducing existential risk.",
-      "The possibility of artificial general intelligence also raises questions in ethics and the philosophy of mind, alongside the practical problem of aligning artificial agents with our values."
-    ],
-    "readingIntro": "Readings listed on the Fall 2017 course schedule. Optional background readings are marked.",
+    "name": "Axiology",
+    "status": "Graduate seminar · Fall 2019",
+    "summary": "What makes the world better or worse: kinds of value, human well-being, aggregation, and population ethics.",
+    "desc": "Axiology is the study of what makes the world better or worse. (This is also one way people use the phrase \"value theory\".) Among other questions, we will ask: What things are non-instrumentally good, and how good are they? Are there different kinds of value that make the world better (e.g. moral, aesthetic, epistemic)? What sorts of things constitute human well-being-- that is, what makes a life go well for someone? Is human well-being a matter of experience, or does it extend beyond the experiential? Is the goodness of the world overall just some kind of aggregate of individual well-being? If so, how does this aggregation work? If not, what more holistic factors apply? Does merely adding more happy people to the world improve its overall value? And finally, how do all these considerations relate to prudential and moral questions about what we should do?",
     "readings": [
       {
-        "title": "Lifespan",
+        "title": "Goodness and rightness",
         "items": [
           {
-            "title": "Overall, Précis of Aging, Death, and Human Longevity: A Philosophical Inquiry"
+            "title": "Schroeder, Teleology, Agent-Relative Value, and “Good”"
           },
           {
-            "title": "Temkin, Is Living Longer Living Better?"
+            "title": "Brown, Consequentialize This"
           },
           {
-            "title": "Friend, Silicon Valley’s Quest to Live Forever",
-            "href": "https://www.newyorker.com/magazine/2017/04/03/silicon-valleys-quest-to-live-forever",
-            "optional": true
-          },
-          {
-            "title": "Miller, Extending Life: Scientific Prospects and Political Obstacles",
-            "optional": true
-          },
-          {
-            "title": "de Grey, Demystifying Aging",
-            "optional": true
-          },
-          {
-            "title": "Bortolotti, Agency, Life Extension, and the Meaning of Life"
-          },
-          {
-            "title": "Bunn, Life Extension and Future Generations"
-          },
-          {
-            "title": "Arrhenius, Life Extension versus Replacement"
-          },
-          {
-            "title": "Cutas, Life Extension, Overpopulation and the Right to Life: Against Lethal Ethics"
-          },
-          {
-            "title": "Bognar, Fair Innings"
-          },
-          {
-            "title": "Wareham, Substantial Life Extension and the Fair Distribution of Healthspans"
+            "title": "Korsgaard, Natural Goodness, Rightness, and the Intersubjectivity of Reason: Reply to Arroyo, Cummiskey, Moland, and Bird-Pollan",
+            "note": "Section 3, pages 386–390"
           }
         ]
       },
       {
-        "title": "Enhancement",
+        "title": "Comparing value",
         "items": [
           {
-            "title": "Sandel, The Case against Perfection",
-            "href": "https://www.theatlantic.com/magazine/archive/2004/04/the-case-against-perfection/302927/"
+            "title": "Chang, Value Incomparability and Incommensurability"
           },
           {
-            "title": "Kamm, Is There a Problem with Enhancement?"
+            "title": "Wasserman, Indeterminacy, Ignorance, and the Possibility of Parity"
           },
           {
-            "title": "Singer, Parental Choice and Human Improvement"
+            "title": "Grimm, Easy Cases and Value Incommensurability"
           },
           {
-            "title": "Savulescu and Sparrow, Making Better Babies, Pro and Con",
-            "note": "Debate transcript"
+            "title": "Nebel, The Good, the Bad, and the Transitivity of Better Than"
           },
           {
-            "title": "DeGrazia, Moral Enhancement, Freedom, and What We (Should) Value in Moral Behaviour"
-          },
-          {
-            "title": "Chalmers, The Singularity",
-            "href": "https://consc.net/papers/singularity.pdf",
-            "note": "Sections 8–10"
+            "title": "Huemer, Lexical Priority and the Problem of Risk"
           }
         ]
       },
       {
-        "title": "Future populations",
+        "title": "Well-being",
         "items": [
+          {
+            "title": "Kagan, The Limits of Well-Being"
+          },
+          {
+            "title": "Fletcher, Objective List Theories"
+          },
+          {
+            "title": "Lin, Welfare Invariabilism"
+          },
+          {
+            "title": "Velleman, Well-Being and Time"
+          },
+          {
+            "title": "Hawkins, Well-Being, Time, and Dementia"
+          },
+          {
+            "title": "Carbonell, Sacrifice and Relational Well-Being"
+          }
+        ]
+      },
+      {
+        "title": "Atoms and aggregation",
+        "items": [
+          {
+            "title": "Chappell, Value Holism"
+          },
+          {
+            "title": "Brown, Two Kinds of Holism about Values"
+          },
           {
             "title": "Greaves, Population Axiology"
           },
           {
-            "title": "Parfit, Can We Avoid the Repugnant Conclusion?"
+            "title": "Parfit, The Unimportance of Identity",
+            "optional": true
           },
           {
-            "title": "Arrhenius, The Moral Status of Potential People"
+            "title": "Greaves and MacAskill, The Case for Strong Longtermism",
+            "href": "https://globalprioritiesinstitute.org/wp-content/uploads/2019/Greaves_MacAskill_The_Case_for_Strong_Longtermism.pdf"
           },
           {
-            "title": "Beckstead, The Case for Prioritizing Existential Risk"
+            "title": "Gustafsson, Our Intuitive Grasp of the Repugnant Conclusion",
+            "href": "http://johanegustafsson.net/papers/our-intuitive-grasp-of-the-repugnant-conclusion.pdf"
+          },
+          {
+            "title": "Budolfson and Spears, Why the Repugnant Conclusion Is Inescapable",
+            "href": "https://scholar.princeton.edu/sites/default/files/cfi/files/budolfson_spears_2018_repugnant_cfi.pdf",
+            "note": "The formal material in section 3.0 may be skipped; the main point is explained in section 3.1."
+          },
+          {
+            "title": "Meacham, Person-Affecting Views and Saturating Counterpart Relations"
           },
           {
             "title": "Greaves and Ord, Moral Uncertainty about Population Axiology"
-          }
-        ]
-      },
-      {
-        "title": "General artificial intelligence",
-        "items": [
-          {
-            "title": "Bostrom, Superintelligence",
-            "note": "Chapters 1, 4, 6, and 7; selected sections from chapters 8, 9, 10, 12, 13, and 15"
           }
         ]
       }
