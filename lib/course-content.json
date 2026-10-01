@@ -467,7 +467,7 @@
       "The course draws on development economics, global health, environmental science, international studies, and progress studies. We examine both particular interventions and the institutions that make progress possible: research funding, incentives, coordination, regulation, and the capacity to implement policy. Topics include health and development, climate and energy, animal welfare, AI, demographic change, and global catastrophic risk.",
       "Philosophical questions include how to weigh health, freedom, opportunity, and happiness; how much future people and nonhuman animals matter; and what responsibilities individuals have to improve the world. PHIL 360 is a more advanced version of PHIL 250: Changing the World, with substantial overlap and more demanding engagement with arguments and evidence."
     ],
-    "readingIntro": "Books and readings listed for Fall 2026 as of September 30. Later units develop as the term progresses; optional readings are marked.",
+    "readingIntro": "Readings from Fall 2026, supplemented with readings from PHIL 250: Changing the World (Fall 2025). Optional readings are marked.",
     "readings": [
       {
         "title": "Required books",
@@ -580,6 +580,21 @@
           {
             "title": "Liebman, When ‘Can’t Miss’ Programs Fail",
             "href": "https://www.vitalcitynyc.org/when-cant-miss-programs-fail/"
+          },
+          {
+            "title": "MacAskill, Doing Good Better",
+            "note": "Chapter 3"
+          },
+          {
+            "title": "Ord, The Moral Imperative toward Cost-Effectiveness"
+          },
+          {
+            "title": "Roser, Many of Us Can Save a Child’s Life, If We Want To",
+            "href": "https://ourworldindata.org/cost-effectiveness"
+          },
+          {
+            "title": "Caviola et al., Donors Vastly Underestimate Differences in Charities’ Effectiveness",
+            "optional": true
           }
         ]
       },
@@ -622,6 +637,234 @@
           {
             "title": "Ritchie, Maternal Deaths",
             "href": "https://ourworldindata.org/maternal-deaths-save-mothers"
+          },
+          {
+            "title": "UBS, Impactful Philanthropy",
+            "note": "Assigned excerpt"
+          },
+          {
+            "title": "Ritchie, Half of All Child Deaths Are Linked to Malnutrition",
+            "href": "https://ourworldindata.org/half-child-deaths-linked-malnutrition"
+          },
+          {
+            "title": "Larsen and Sánchez-Triana, Global Health Burden and Cost of Lead Exposure",
+            "note": "Summary, Introduction, and Discussion"
+          },
+          {
+            "title": "Luby et al., Removing Lead from the Economy"
+          },
+          {
+            "title": "Our World in Data, Global Health",
+            "href": "https://ourworldindata.org/health-meta",
+            "optional": true
+          },
+          {
+            "title": "Dattani et al., Why We Didn’t Get a Malaria Vaccine Sooner",
+            "href": "https://worksinprogress.co/issue/why-we-didnt-get-a-malaria-vaccine-sooner/",
+            "optional": true
+          },
+          {
+            "title": "Ritchie and Roser, Micronutrient Deficiency",
+            "href": "https://ourworldindata.org/micronutrient-deficiency",
+            "optional": true
+          },
+          {
+            "title": "Lanphear et al., Lead Poisoning",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Gender disparity and labor mobility",
+        "items": [
+          {
+            "title": "Bettle, Violence against Women and Girls",
+            "href": "https://www.founderspledge.com/research/violence-against-women-and-girls"
+          },
+          {
+            "title": "Clemens, Economics and Emigration: Trillion-Dollar Bills on the Sidewalk?",
+            "note": "Pages 83–87"
+          },
+          {
+            "title": "Hoijmakers, Women’s Empowerment",
+            "note": "Excerpts",
+            "optional": true
+          },
+          {
+            "title": "Clemens, Don’t Close the Golden Door",
+            "href": "https://www.cgdev.org/sites/default/files/16558_file_Migration_Brief_web.pdf",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Lifestyle, mental health, and aging",
+        "items": [
+          {
+            "title": "Li et al., Healthy Lifestyle and Life Expectancy",
+            "note": "Introduction and Discussion"
+          },
+          {
+            "title": "Founders Pledge, Mental Health Report",
+            "href": "https://www.founderspledge.com/downloads/fp-mental-health",
+            "note": "Pages 2–3 and 7–20"
+          },
+          {
+            "title": "Kuruc and Manley, The Ethics, Economics, and Demographics of Delaying Aging",
+            "href": "/papers/EEDDA.pdf",
+            "note": "Pages 428–433"
+          },
+          {
+            "title": "Our World in Data, Smoking",
+            "href": "https://ourworldindata.org/smoking",
+            "optional": true
+          },
+          {
+            "title": "Farrelly, Why Aging Research?",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Air pollution, climate, and energy",
+        "items": [
+          {
+            "title": "Ritchie, Not the End of the World",
+            "note": "Chapter 2: Air Pollution; chapter 3: Climate Change"
+          },
+          {
+            "title": "Wallace-Wells, Ten Million a Year"
+          },
+          {
+            "title": "Ritchie and Rosado, Sources of Air Pollution",
+            "href": "https://ourworldindata.org/air-pollution-sources",
+            "optional": true
+          },
+          {
+            "title": "Hilton, Climate Change",
+            "href": "https://80000hours.org/problem-profiles/climate-change/",
+            "optional": true
+          },
+          {
+            "title": "Ackva et al., Climate and the Political Landscape",
+            "href": "https://www.founderspledge.com/downloads/fp-all-in",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Animal welfare and factory farming",
+        "items": [
+          {
+            "title": "Clare and Goth, Animal Welfare Cause Area Report",
+            "href": "https://www.founderspledge.com/research/animal-welfare-cause-report"
+          },
+          {
+            "title": "Ritchie, What Are the Trade-Offs between Animal Welfare and the Environmental Impact of Meat?",
+            "href": "https://ourworldindata.org/what-are-the-trade-offs-between-animal-welfare-and-the-environmental-impact-of-meat"
+          },
+          {
+            "title": "DeGrazia, On Factory Farming",
+            "note": "Assigned excerpt"
+          },
+          {
+            "title": "Huemer, The Conscience of a Human Being",
+            "note": "Excerpts"
+          },
+          {
+            "title": "Henning, Standing in Livestock’s Long Shadow",
+            "note": "Excerpts",
+            "optional": true
+          },
+          {
+            "title": "Norcross, The Illogic of the Larder",
+            "note": "Excerpts",
+            "optional": true
+          },
+          {
+            "title": "80,000 Hours, Factory Farming",
+            "href": "https://80000hours.org/problem-profiles/factory-farming/",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Global catastrophic risk and advanced AI",
+        "items": [
+          {
+            "title": "RAND, Global Catastrophic Risk Assessment",
+            "note": "Summary"
+          },
+          {
+            "title": "RAND, Severe Pandemics",
+            "note": "Global Catastrophic Risk Assessment"
+          },
+          {
+            "title": "RAND, Nuclear War",
+            "note": "Global Catastrophic Risk Assessment"
+          },
+          {
+            "title": "RAND, Rapid and Severe Climate Change",
+            "note": "Global Catastrophic Risk Assessment, pages 63–70 and 77–79"
+          },
+          {
+            "title": "RAND, Artificial Intelligence",
+            "note": "Global Catastrophic Risk Assessment, pages 115–122 and 126–128"
+          },
+          {
+            "title": "Ough, The Anti-Catastrophe League",
+            "note": "Chapters 11–12"
+          },
+          {
+            "title": "Ruhl, Global Catastrophic Nuclear Risk: A Guide for Philanthropists",
+            "href": "https://www.founderspledge.com/research/global-catastrophic-nuclear-risk-a-guide-for-philanthropists",
+            "optional": true
+          },
+          {
+            "title": "Esvelt, How to Prevent the Next Pandemic",
+            "href": "https://asteriskmag.com/issues/01/how-to-prevent-the-next-pandemic",
+            "note": "Interview",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Choosing what to do: lifestyle, donations, and careers",
+        "items": [
+          {
+            "title": "Bregman, Moral Ambition",
+            "note": "Chapters 6–7; pages 204–226 (chapter 10, section 3 through the end of the book)"
+          },
+          {
+            "title": "80,000 Hours, Can One Person Make a Difference?",
+            "href": "https://80000hours.org/career-guide/can-one-person-make-a-difference/",
+            "note": "Career Guide, part 2"
+          },
+          {
+            "title": "80,000 Hours, Which Careers Help the Most People?",
+            "href": "https://80000hours.org/career-guide/high-impact-jobs/#recap-of-our-career-guide-so-far",
+            "note": "Career Guide, part 6"
+          },
+          {
+            "title": "80,000 Hours, Career Capital",
+            "href": "https://80000hours.org/career-guide/career-capital/",
+            "note": "Career Guide, part 7"
+          },
+          {
+            "title": "80,000 Hours, Personal Fit",
+            "href": "https://80000hours.org/career-guide/personal-fit/",
+            "note": "Career Guide, part 8",
+            "optional": true
+          },
+          {
+            "title": "Christiano and Neimand, Stop Raising Awareness Already",
+            "optional": true
+          },
+          {
+            "title": "80,000 Hours, How to Be Successful",
+            "href": "https://80000hours.org/career-guide/how-to-be-successful/",
+            "note": "Career Guide, part 9",
+            "optional": true
           }
         ]
       }
