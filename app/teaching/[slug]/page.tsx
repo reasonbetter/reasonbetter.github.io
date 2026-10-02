@@ -90,11 +90,24 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
                 {section.description && (
                   <p className="mt-3 leading-7 text-slate-700 dark:text-slate-300">{section.description}</p>
                 )}
+                {section.furtherReading && (
+                  <h4 className="mt-5 text-sm font-semibold text-slate-700 dark:text-slate-300">Readings</h4>
+                )}
                 <ul className="mt-4 list-disc space-y-3 pl-5 leading-6 text-slate-700 dark:text-slate-300">
                   {section.items.map((item, index) => (
                     <ReadingEntry key={`${item.title}-${index}`} item={item} />
                   ))}
                 </ul>
+                {section.furtherReading && (
+                  <div className="mt-6">
+                    <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Further reading</h4>
+                    <ul className="mt-4 list-disc space-y-3 pl-5 leading-6 text-slate-700 dark:text-slate-300">
+                      {section.furtherReading.map((item, index) => (
+                        <ReadingEntry key={`${item.title}-${index}`} item={item} />
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </section>
             ))}
           </div>

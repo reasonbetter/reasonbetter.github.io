@@ -7,7 +7,7 @@ export type ReadingItem = {
   optional?: boolean;
   parts?: ReadingItem[];
 };
-export type ReadingSection = { title: string; description?: string; items: ReadingItem[] };
+export type ReadingSection = { title: string; description?: string; items: ReadingItem[]; furtherReading?: ReadingItem[] };
 export type Course = {
   slug: string;
   code: string;
