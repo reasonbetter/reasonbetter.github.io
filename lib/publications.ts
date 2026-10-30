@@ -94,7 +94,7 @@ export const publications: Publication[] = [
   },
   {
     title: "Safety, Content, Apriority, Self-Knowledge",
-    venue: "<em>Mind</em>, 117: 59–84",
+    venue: "<em>The Journal of Philosophy</em>, 104(8): 403–423 (2007)",
     link: "/papers/sca+published.pdf",
     tags: ["epistemology", "the apriori"],
     note: "Revises the epistemic condition of 'safety'; rethinks the a priori in light of semantic externalism",
