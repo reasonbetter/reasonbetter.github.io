@@ -10,24 +10,28 @@
       "We consider how to characterize cognitive errors, which interventions improve reasoning, and whether improvements transfer across tasks. A recurring question concerns measurement: can we devise tests of good reasoning where improving a score requires improving the underlying skill? We also examine sycophancy, confabulation, and deception in language models, and ask how reflection, training, and collaboration might produce more reliable epistemics.",
       "The course brings philosophical analysis into conversation with empirical work in psychology and AI. Student projects move from concepts such as intellectual humility or probabilistic calibration to proposals for measurement and systematic improvement. Graduate students from other disciplines are welcome."
     ],
-    "readingHeading": "Topics",
-    "readingIntro": "Course ongoing- further topics TBA",
+    "readingHeading": "Topics and readings",
+    "readingIntro": "Tentative schedule. I’ll add readings and link to them on this page as I decide on them.",
     "readings": [
       {
         "title": "September 8 · What is good human reasoning?",
         "description": "Normative reasoning standards; the \"rationality wars\"; some candidate maps of skills, biases and heuristics.",
         "items": [
           {
-            "title": "McHugh, Norms of Reasoning"
+            "title": "McHugh, Norms of Reasoning",
+            "href": "https://doi.org/10.1111/phc3.13008"
           },
           {
-            "title": "Baron, The Point of Normative Models"
+            "title": "Baron, The Point of Normative Models in Judgment and Decision Making",
+            "href": "https://doi.org/10.3389/fpsyg.2012.00577"
           },
           {
-            "title": "Gigerenzer, Axiomatic Rationality and Ecological Rationality"
+            "title": "Gigerenzer, Axiomatic Rationality and Ecological Rationality",
+            "href": "https://doi.org/10.1007/s11229-019-02296-5"
           },
           {
-            "title": "Dennett, True Believers: The Intentional Strategy and Why It Works"
+            "title": "Dennett, True Believers: The Intentional Strategy and Why It Works",
+            "href": "https://doi.org/10.7551/mitpress/4626.003.0003"
           }
         ]
       },
@@ -37,13 +41,16 @@
         "items": [
           {
             "title": "Goldstein and Levinstein, Does ChatGPT Have a Mind?",
+            "href": "https://doi.org/10.18716/ojs/phai/2026.11767",
             "note": "Sections 2.4, 3.1, and 3.3 optional"
           },
           {
-            "title": "Shanahan et al., Role Play with Large Language Models"
+            "title": "Shanahan et al., Role Play with Large Language Models",
+            "href": "https://www.nature.com/articles/s41586-023-06647-8"
           },
           {
             "title": "Goldstein and Lederman, What Does ChatGPT Want?",
+            "href": "https://doi.org/10.1080/0020174X.2026.2727584",
             "note": "Focus on sections 2.1, 3, 5, and 6"
           }
         ]
@@ -63,32 +70,30 @@
           {
             "title": "Kutasov et al., Teaching Claude Why",
             "href": "https://alignment.anthropic.com/2026/teaching-claude-why/"
-          },
+          }
+        ],
+        "furtherReading": [
           {
             "title": "Li et al., Disentangling Intent from Role",
-            "href": "https://arxiv.org/html/2605.01899v1",
-            "optional": true
+            "href": "https://arxiv.org/html/2605.01899v1"
           },
           {
             "title": "Wang et al., Persona Features Control Emergent Misalignment",
-            "href": "https://arxiv.org/html/2506.19823",
-            "optional": true
+            "href": "https://arxiv.org/html/2506.19823"
           },
           {
             "title": "Betley et al., Weird Generalization and Inductive Back Doors",
-            "href": "https://arxiv.org/html/2512.09742",
-            "optional": true
+            "href": "https://arxiv.org/html/2512.09742"
           },
           {
             "title": "Qi et al., Safety Alignment Should Be Made More Than Just a Few Tokens Deep",
-            "href": "https://arxiv.org/html/2406.05946v1",
-            "optional": true
+            "href": "https://arxiv.org/html/2406.05946v1"
           }
         ]
       },
       {
         "title": "September 29 · How well do reasoners understand their own judgments?",
-        "description": "Do reasoners' accounts of their own reasoning reflect the real explanations for their answers? People and LLMs both confabulate, but in different ways. What's the difference between introspective awareness and confident guessing about one's internal states? When a model \"introspects\", whose states are being reported- the LLM's or the Assistant's?",
+        "description": "Do reasoners' accounts of their own reasoning reflect the real explanations for their answers? People and LLMs both confabulate, but in different ways. What's the difference between introspective awareness and confident guessing about one's internal states? When a model \"introspects\", whose states are being reported—the LLM's or the Assistant's?",
         "items": [
           {
             "title": "Chen et al., Reasoning Models Don't Always Say What They Think",
@@ -105,25 +110,24 @@
           {
             "title": "Hall et al., Lifting the Veil of Morality",
             "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0045457&type=printable"
-          },
+          }
+        ],
+        "furtherReading": [
           {
             "title": "Comșa and Shanahan, Does It Make Sense to Speak of Introspection in Large Language Models?",
-            "href": "https://arxiv.org/html/2506.05068v2",
-            "optional": true
+            "href": "https://arxiv.org/html/2506.05068v2"
           },
           {
             "title": "Boppana et al., Reasoning Theater",
-            "href": "https://arxiv.org/abs/2603.05488",
-            "optional": true
+            "href": "https://arxiv.org/abs/2603.05488"
           },
           {
             "title": "Emmons et al., When Chain of Thought Is Necessary, Language Models Struggle to Evade Monitors",
-            "href": "https://arxiv.org/html/2507.05246v1",
-            "optional": true
+            "href": "https://arxiv.org/html/2507.05246v1"
           },
           {
             "title": "Johansson et al., Failure to Detect Mismatches between Intention and Outcome in a Simple Decision Task",
-            "optional": true
+            "href": "https://doi.org/10.1126/science.1111709"
           }
         ]
       },
@@ -182,6 +186,28 @@
           {
             "title": "OpenAI, Training LLMs for Honesty via Confessions",
             "href": "https://arxiv.org/abs/2512.08093"
+          }
+        ]
+      },
+      {
+        "title": "October 27 · Incentives and trust",
+        "description": "When should learning how a reasoner was shaped change how much we trust its reasoning? Kunda explains how wanting a conclusion can affect which evidence and inferential rules we use. OpenAI describes a case in which feedback intended to improve an assistant encouraged excessive agreement. Anthropic studies how rewarding shortcuts on programming tasks can change behavior elsewhere. Vavova asks what discoveries about the origins of our beliefs actually license us to conclude.",
+        "items": [
+          {
+            "title": "Kunda, The Case for Motivated Reasoning",
+            "href": "https://doi.org/10.1037/0033-2909.108.3.480"
+          },
+          {
+            "title": "OpenAI, Expanding on What We Missed with Sycophancy",
+            "href": "https://openai.com/index/expanding-on-sycophancy/"
+          },
+          {
+            "title": "Anthropic, From Shortcuts to Sabotage: Natural Emergent Misalignment from Reward Hacking",
+            "href": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking"
+          },
+          {
+            "title": "Vavova, Irrelevant Influences",
+            "href": "https://doi.org/10.1111/phpr.12297"
           }
         ]
       }
